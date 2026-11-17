@@ -1193,3 +1193,63 @@ footer>*:not(.graffiti-spray-layer){position:relative;z-index:1}
  .graffiti-spray-layer:before{filter:blur(15px)}
  .graffiti-spray-layer:after{filter:blur(7px)}
 }
+
+
+/* New dedicated banner and away-days chapters in the UCB06 archive. */
+.banner-story-section,.away-days-section{position:relative;isolation:isolate;overflow:hidden;padding:clamp(76px,10vw,150px) 8vw;background:#111;color:#f5f0e8}
+.banner-story-section>*:not(.graffiti-spray-layer),.away-days-section>*:not(.graffiti-spray-layer){position:relative;z-index:1}
+.section-kicker{margin:0 0 20px;color:#df343b;font:700 10px 'DM Mono',monospace;letter-spacing:2px}
+.banner-story-heading{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:30px;max-width:1180px;margin:0 auto 46px}
+.banner-story-heading .section-kicker{grid-column:1/-1}
+.banner-story-heading h2,.away-days-heading h2{margin:0;font-size:clamp(64px,10vw,150px);line-height:.82;letter-spacing:-.075em;font-weight:900}
+.banner-story-heading h2 span,.away-days-heading h2 span{color:#e52b35}
+.banner-story-lead{max-width:470px;margin:0 0 5px;color:#c5bdb5;font-size:clamp(15px,1.5vw,20px);line-height:1.65}
+.banner-feature-photo{max-width:1180px;margin:0 auto;background:#f3eee3;padding:12px 12px 18px;box-shadow:0 16px 45px #0008;transform:rotate(-.5deg)}
+.banner-feature-photo img{display:block;width:100%;height:clamp(230px,48vw,620px);object-fit:cover;filter:contrast(1.08) saturate(.86)}
+.banner-feature-photo figcaption{display:flex;justify-content:space-between;gap:12px;padding:13px 3px 0;color:#4a4039;font:9px 'DM Mono',monospace;letter-spacing:1.2px}
+.banner-story-facts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,90px);max-width:1180px;margin:65px auto 0;border-top:1px solid #ffffff30;padding-top:30px}
+.banner-story-facts>div{max-width:480px}
+.banner-story-facts span,.away-day-card span{color:#e34a4f;font:10px 'DM Mono',monospace;letter-spacing:1.5px}
+.banner-story-facts h3{margin:16px 0;font-size:clamp(25px,4vw,48px);line-height:.98;letter-spacing:-.04em}
+.banner-story-facts p{max-width:390px;color:#b9b1a9;line-height:1.65}
+.away-days-section{background:#e9e4d9;color:#171513}
+.away-days-heading{max-width:1180px;margin:0 auto 48px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:end}
+.away-days-heading .section-kicker{grid-column:1/-1}
+.away-days-heading h2{color:#171513}
+.away-days-heading h2 span{color:#bd2029}
+.away-days-heading>p:last-child{max-width:440px;margin:0 0 5px;color:#615a52;line-height:1.7}
+.away-days-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.35fr 1fr;gap:18px}
+.away-day-card{position:relative;min-height:250px;overflow:hidden;background:#171513;color:white}
+.away-day-large{grid-row:span 2;min-height:520px}
+.away-day-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.18) contrast(1.08);transition:transform .6s ease}
+.away-day-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000d,transparent 65%)}
+.away-day-card:hover img{transform:scale(1.045)}
+.away-day-card>div{position:absolute;z-index:1;left:24px;right:20px;bottom:22px}
+.away-day-card h3{margin:9px 0 0;font-size:clamp(19px,2.7vw,34px);letter-spacing:-.04em}
+.away-archive-link{display:flex;width:max-content;max-width:100%;margin:34px auto 0;color:#171513}
+.spray-banner:before{right:-5%;top:4%;background:radial-gradient(circle,#e32935 0%,#e3293577 25%,transparent 72%)}
+.spray-banner:after{left:4%;bottom:12%;background:linear-gradient(90deg,#e32935,#e68a29,#e5c13b);clip-path:polygon(0 30%,100% 0,82% 90%,10% 100%)}
+.spray-away:before{left:-6%;bottom:2%;background:radial-gradient(circle,#e32b35 0%,#e32b3577 25%,transparent 72%)}
+.spray-away:after{right:3%;top:15%;background:linear-gradient(90deg,#e32935,#e68a29,#3686a0);clip-path:polygon(0 20%,100% 0,85% 100%,10% 80%)}
+@media(max-width:800px){
+ .banner-story-section,.away-days-section{padding:70px 7vw}
+ .banner-story-heading,.away-days-heading{grid-template-columns:1fr;gap:22px}
+ .banner-story-heading .section-kicker,.away-days-heading .section-kicker{grid-column:auto}
+ .banner-story-heading h2,.away-days-heading h2{font-size:clamp(58px,16vw,100px)}
+ .banner-story-lead,.away-days-heading>p:last-child{max-width:100%}
+ .banner-story-facts{gap:22px;margin-top:42px}
+ .banner-story-facts h3{font-size:clamp(22px,6vw,34px)}
+ .banner-feature-photo{padding:8px 8px 13px}
+ .banner-feature-photo figcaption{font-size:7px;letter-spacing:.6px}
+ .away-days-grid{grid-template-columns:1fr 1fr;gap:10px}
+ .away-day-large{grid-column:1/-1;grid-row:auto;min-height:350px}
+ .away-day-card:not(.away-day-large){min-height:210px}
+ .away-day-card>div{left:13px;right:10px;bottom:13px}
+ .away-day-card h3{font-size:18px}
+ .away-day-card span{font-size:8px;letter-spacing:.7px}
+}
+@media(max-width:430px){
+ .banner-story-facts{grid-template-columns:1fr}
+ .away-days-grid{grid-template-columns:1fr}
+ .away-day-large,.away-day-card:not(.away-day-large){grid-column:auto;min-height:260px}
+}

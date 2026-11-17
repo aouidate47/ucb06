@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Instagram, Youtube, Music2, Menu, Facebook } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Youtube, Music2, Menu } from "lucide-react";
 
 const archiveImages = [
   { title: "CURVA MITICA", category: "THE STAND / ARCHIVE", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/kacm1.jpg" },

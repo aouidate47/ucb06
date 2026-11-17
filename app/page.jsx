@@ -30,7 +30,16 @@ export default function Home() {
           <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#media">ARCHIVE</a><a href="#contact">FOLLOW</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
-        <button className="menu-button" aria-label="Open menu"><Menu size={22} /></button>
+        <details className="mobile-menu">
+          <summary aria-label="Open navigation menu"><Menu size={23} /></summary>
+          <nav className="mobile-nav" aria-label="Mobile navigation">
+            <a href="#story">THE STORY</a>
+            <a href="#culture">OUR ROOTS</a>
+            <a href="#media">ARCHIVE</a>
+            <a href="#contact">FOLLOW</a>
+            <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
+          </nav>
+        </details>
       </header>
 
       <section className="hero">

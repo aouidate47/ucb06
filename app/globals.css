@@ -1128,3 +1128,68 @@ main > section + footer {
     height:22px;
   }
 }
+
+
+/* Subtle aerosol-paint marks: each section gets its own colour and spray geometry. */
+.graffiti-spray-layer{
+  position:absolute;z-index:1;inset:0;overflow:hidden;pointer-events:none;
+  opacity:.48;mix-blend-mode:multiply;
+}
+.graffiti-spray-layer:before,
+.graffiti-spray-layer:after{
+  content:"";position:absolute;display:block;pointer-events:none;
+}
+.graffiti-spray-layer:before{
+  width:clamp(150px,24vw,360px);height:clamp(150px,24vw,360px);
+  border-radius:50%;
+  filter:blur(20px);
+  opacity:.52;
+}
+.graffiti-spray-layer:after{
+  width:clamp(100px,18vw,250px);height:clamp(42px,6vw,82px);
+  border-radius:50%;
+  filter:blur(9px);
+  opacity:.8;
+  transform:rotate(-28deg);
+}
+.hero,.manifesto,.culture,.rituals-section,.legacy-section,.media-section,
+.youtube-section,.spotify-section,.quote-section,footer{
+  position:relative;isolation:isolate;
+}
+.graffiti-spray-layer{z-index:0}
+.hero>*:not(.graffiti-spray-layer),
+.manifesto>*:not(.graffiti-spray-layer),
+.culture>*:not(.graffiti-spray-layer),
+.rituals-section>*:not(.graffiti-spray-layer),
+.legacy-section>*:not(.graffiti-spray-layer),
+.media-section>*:not(.graffiti-spray-layer),
+.youtube-section>*:not(.graffiti-spray-layer),
+.spotify-section>*:not(.graffiti-spray-layer),
+.quote-section>*:not(.graffiti-spray-layer),
+footer>*:not(.graffiti-spray-layer){position:relative;z-index:1}
+.spray-hero{opacity:.32;mix-blend-mode:screen}
+.spray-hero:before{top:10%;right:4%;background:radial-gradient(circle,#e32935 0%,#e3293577 22%,#e3293500 70%)}
+.spray-hero:after{top:23%;left:2%;background:linear-gradient(90deg,#d51e2a,#ff6b32 48%,transparent);clip-path:polygon(0 30%,100% 0,78% 65%,8% 100%)}
+.spray-story:before{top:10%;left:-7%;background:radial-gradient(circle,#e22a32 0%,#e22a3277 25%,transparent 70%)}
+.spray-story:after{right:4%;bottom:12%;background:linear-gradient(90deg,#c82027,#f04b34,#ffbd39);clip-path:polygon(0 42%,100% 0,78% 58%,8% 100%)}
+.spray-roots:before{right:-5%;top:12%;background:radial-gradient(circle,#ff9d22 0%,#ff9d2277 24%,transparent 70%)}
+.spray-roots:after{left:4%;bottom:16%;background:linear-gradient(90deg,#f5a623,#e83b32,#c82027);clip-path:polygon(0 0,100% 32%,88% 100%,12% 68%)}
+.spray-matchday:before{left:18%;top:8%;background:radial-gradient(circle,#e51e2a 0%,#e51e2a77 26%,transparent 72%)}
+.spray-matchday:after{right:2%;bottom:8%;background:linear-gradient(90deg,#ed302d,#ff8c22,#e6c33d);clip-path:polygon(0 30%,100% 0,80% 75%,12% 100%)}
+.spray-legacy:before{left:-6%;bottom:8%;background:radial-gradient(circle,#a51b28 0%,#a51b2877 25%,transparent 72%)}
+.spray-legacy:after{right:6%;top:13%;background:linear-gradient(90deg,#8e2022,#d94c29,#e5b74e);clip-path:polygon(0 25%,100% 0,83% 100%,10% 75%)}
+.spray-archive:before{right:-6%;top:8%;background:radial-gradient(circle,#2787a8 0%,#2787a877 24%,transparent 70%)}
+.spray-archive:after{left:5%;bottom:9%;background:linear-gradient(90deg,#147e9e,#e23c32,#e9a62e);clip-path:polygon(0 40%,100% 0,88% 70%,12% 100%)}
+.spray-youtube:before{left:4%;top:5%;background:radial-gradient(circle,#ed2938 0%,#ed293877 25%,transparent 72%)}
+.spray-youtube:after{right:3%;bottom:12%;background:linear-gradient(90deg,#e32634,#f06b2c,#f3c33a);clip-path:polygon(0 25%,100% 0,84% 100%,9% 70%)}
+.spray-music:before{right:-5%;bottom:0;background:radial-gradient(circle,#24a66a 0%,#24a66a77 24%,transparent 72%)}
+.spray-music:after{left:5%;top:15%;background:linear-gradient(90deg,#14985b,#d9c52e,#e23a34);clip-path:polygon(0 0,100% 35%,80% 100%,10% 65%)}
+.spray-quote:before{left:35%;top:-20%;background:radial-gradient(circle,#f04b37 0%,#f04b3777 24%,transparent 70%)}
+.spray-quote:after{right:5%;bottom:12%;background:linear-gradient(90deg,#e32732,#f3a52e,#e6d13e);clip-path:polygon(0 35%,100% 0,85% 85%,10% 100%)}
+.spray-footer:before{left:-6%;top:-25%;background:radial-gradient(circle,#e72a36 0%,#e72a3677 25%,transparent 72%)}
+.spray-footer:after{right:8%;bottom:14%;background:linear-gradient(90deg,#e62d37,#e78c2b,#e7ca38);clip-path:polygon(0 25%,100% 0,80% 100%,10% 72%)}
+@media(max-width:800px){
+ .graffiti-spray-layer{opacity:.34}
+ .graffiti-spray-layer:before{filter:blur(15px)}
+ .graffiti-spray-layer:after{filter:blur(7px)}
+}

@@ -712,3 +712,42 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
  .stadium-pitch-overlay .ritual-card-copy p{font-size:7px;line-height:1.35}
  .stadium-swipe-note{font-size:6px;letter-spacing:.4px}
 }
+
+
+/* Fix image stacking and give the matchday panels a true floating 3D treatment */
+.stadium-bowl{position:relative;isolation:isolate;border-radius:20px;overflow:hidden;background:#171513;aspect-ratio:16/9;padding:0;display:block}
+.stadium-bowl:before,.stadium-bowl:after{display:none}
+.stadium-photo{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 54%;border-radius:inherit}
+.stadium-image-shade{position:absolute;inset:0;z-index:1;border-radius:inherit;background:linear-gradient(90deg,#08080855,transparent 24%,transparent 76%,#08080855),linear-gradient(0deg,#08080866,transparent 35%,#08080822)}
+.stadium-pitch-overlay{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;perspective:1600px;transform-style:preserve-3d;padding:5% 7% 7%}
+.stadium-pitch-overlay .rituals-carousel{position:relative;z-index:3;width:100%;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:11%;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;touch-action:pan-x}
+.stadium-pitch-overlay .rituals-carousel::-webkit-scrollbar{display:none}
+.stadium-pitch-overlay .rituals-track{display:flex;align-items:center;width:100%;height:100%;transform-style:preserve-3d}
+.stadium-pitch-overlay .ritual-card{position:relative;flex:0 0 78%;width:78%;min-width:78%;height:82%;min-height:0;margin:0 11%;padding:clamp(18px,2.6vw,34px);display:flex;flex-direction:column;justify-content:space-between;scroll-snap-align:center;scroll-snap-stop:always;overflow:hidden;border-radius:16px;background:linear-gradient(145deg,#fff8ed 0%,#e9ddc8 100%);border:1px solid #fff9;outline:1px solid #211b18;box-shadow:0 34px 55px #000b,0 16px 0 #a51e25,0 21px 0 #211b18;transform:rotateY(-9deg) rotateX(4deg) translateZ(75px);transform-style:preserve-3d;backface-visibility:hidden}
+.stadium-pitch-overlay .ritual-card:nth-child(even){transform:rotateY(9deg) rotateX(4deg) translateZ(75px)}
+.stadium-pitch-overlay .ritual-card-top{font-size:clamp(8px,.8vw,10px)}
+.stadium-pitch-overlay .ritual-graphic{flex:0 0 auto;width:100%;height:clamp(54px,9vh,110px);margin:clamp(8px,1.2vh,14px) 0}
+.stadium-pitch-overlay .ritual-card-copy{margin-top:auto}
+.stadium-pitch-overlay .ritual-card-copy h3{font-size:clamp(26px,3.4vw,48px);margin-bottom:8px}
+.stadium-pitch-overlay .ritual-card-copy p{font-size:clamp(9px,.95vw,12px);line-height:1.6;max-width:620px}
+.stadium-pitch-overlay .ritual-card-line{margin-top:12px}
+.stadium-swipe-note{position:absolute;z-index:4;left:8%;right:8%;bottom:2.2%;display:flex;justify-content:space-between;align-items:center;color:#fff;font:9px 'DM Mono',monospace;letter-spacing:1.5px;text-shadow:0 1px 5px #000}
+@media(max-width:800px){
+ .stadium-bowl{aspect-ratio:16/9;margin-top:36px;border-radius:14px}
+ .stadium-pitch-overlay{padding:6% 4% 9%;perspective:1100px}
+ .stadium-pitch-overlay .ritual-card{flex-basis:88%;width:88%;min-width:88%;height:84%;margin:0 6%;padding:12px 14px;border-radius:12px;box-shadow:0 20px 34px #000b,0 8px 0 #a51e25,0 12px 0 #211b18;transform:rotateY(-6deg) rotateX(3deg) translateZ(45px)}
+ .stadium-pitch-overlay .ritual-card:nth-child(even){transform:rotateY(6deg) rotateX(3deg) translateZ(45px)}
+ .stadium-pitch-overlay .ritual-card-top span:last-child{font-size:7px}
+ .stadium-pitch-overlay .ritual-graphic{height:clamp(32px,7vh,58px);margin:5px 0}
+ .stadium-pitch-overlay .ritual-card-copy h3{font-size:clamp(18px,4.4vw,28px);margin-bottom:4px}
+ .stadium-pitch-overlay .ritual-card-copy p{font-size:clamp(8px,1.7vw,10px);line-height:1.4}
+ .stadium-pitch-overlay .ritual-card-line{height:3px;margin-top:6px}
+ .stadium-swipe-note{font-size:7px;letter-spacing:.8px;bottom:2%}
+}
+@media(max-width:430px){
+ .stadium-pitch-overlay{padding:6% 2% 10%}
+ .stadium-pitch-overlay .ritual-card{flex-basis:90%;width:90%;min-width:90%;height:84%;margin:0 5%;padding:10px 12px}
+ .stadium-pitch-overlay .ritual-card-copy h3{font-size:clamp(16px,4.8vw,21px)}
+ .stadium-pitch-overlay .ritual-card-copy p{font-size:7px;line-height:1.35}
+ .stadium-swipe-note{font-size:6px;letter-spacing:.4px}
+}

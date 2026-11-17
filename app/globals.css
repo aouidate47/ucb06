@@ -277,3 +277,66 @@ footer{padding:75px 7vw 25px}
 @media(prefers-reduced-motion:reduce){.hero-video{display:none}}
 
 *{font-family:'Permanent Marker',cursive!important;font-weight:400!important}
+
+/* UCB06 section refinements — keep the opening two sections intact */
+.culture{background:#171513;padding-top:112px;padding-bottom:120px;isolation:isolate}
+.culture:before{content:'2006';position:absolute;left:-2vw;bottom:-.18em;font:clamp(180px,34vw,470px)/.8 'Anton',Impact,sans-serif;color:#eee6d507;letter-spacing:-.05em;pointer-events:none}
+.culture-heading{margin-bottom:66px;align-items:flex-end}
+.culture-heading>p{font-size:clamp(54px,7vw,92px);line-height:.82;letter-spacing:-.025em}
+.story-list{position:relative;max-width:1120px;margin-left:auto}
+.story-list:before{content:'';position:absolute;left:24px;top:20px;bottom:20px;width:1px;background:linear-gradient(transparent,var(--red) 10%,#eee6d533 90%,transparent)}
+.story-row{position:relative;grid-template-columns:50px minmax(0,1fr) 150px 32px;gap:24px;padding:30px 22px 30px 0;border-top:1px solid #eee6d526;transition:padding .25s}
+.story-row:last-child{border-bottom:1px solid #eee6d526}
+.story-number{width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--red);background:#171513;color:var(--paper);font-size:10px;position:relative;z-index:1}
+.story-title h3{font-size:clamp(27px,3.2vw,42px);letter-spacing:.2px}
+.story-title p{max-width:620px;font-size:12px;line-height:1.9;color:#c4b8a7}
+.story-type{justify-self:end;color:var(--red);text-align:right;font-size:9px;line-height:1.7}
+.story-arrow{width:32px;height:32px;display:grid;place-items:center;border:1px solid #eee6d533;transition:background .25s,color .25s}
+.story-row:hover .story-number,.story-row:hover .story-arrow{background:var(--red);border-color:var(--red);color:white}
+.legacy-section{background:#e8dfcf;color:#171513;padding-top:118px;padding-bottom:118px;isolation:isolate}
+.legacy-section:before{content:'THE RECORD';position:absolute;right:-2vw;top:18px;font:clamp(110px,20vw,270px)/.8 'Anton',Impact,sans-serif;color:#17151308;white-space:nowrap;pointer-events:none}
+.legacy-title{margin:82px 0 55px}
+.legacy-title p{font-size:clamp(56px,8.3vw,116px);line-height:.82}
+.legacy-grid{gap:24px;align-items:stretch}
+.legacy-card{min-height:420px;padding:38px 38px 32px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:10px 10px 0 var(--ink);transition:transform .3s,box-shadow .3s}
+.legacy-card:hover{transform:translateY(-7px);box-shadow:10px 17px 0 var(--ink)}
+.legacy-card-morocco{transform:translateY(36px)}
+.legacy-card-morocco:hover{transform:translateY(29px)}
+.legacy-card h3{font-size:clamp(43px,5.3vw,76px);line-height:.86;max-width:580px}
+.legacy-caption{position:relative;left:auto;bottom:auto;margin-top:40px;font-size:9px;letter-spacing:1.5px}
+.legacy-footnote{margin-top:92px;letter-spacing:2px}
+.media-section{padding-top:120px;padding-bottom:125px;background:#d9cfbd}
+.media-section:after{content:'UCB06 PHOTO ARCHIVE';position:absolute;right:8vw;top:42px;font:10px 'DM Mono',monospace;letter-spacing:2px;color:#8a7d6b}
+.media-heading{align-items:flex-end;margin-bottom:76px}
+.media-heading h2{font-size:clamp(72px,9.5vw,132px);line-height:.82}
+.media-heading p{max-width:390px;line-height:1.9;font-size:12px}
+.media-grid{grid-template-columns:1.2fr .9fr .9fr .9fr;gap:14px;align-items:stretch}
+.media-card,.media-card-2,.media-card-3{height:360px;margin:0;transform:none;border:5px solid #eee6d5;outline:1px solid #171513;box-shadow:5px 5px 0 var(--red);transition:transform .3s,box-shadow .3s}
+.media-card:nth-child(even){margin-top:42px}
+.media-card:nth-child(3){margin-top:84px}
+.media-card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:8px 12px 0 var(--red)}
+.media-photo{filter:grayscale(1) contrast(1.12) sepia(.14)}
+.media-card-info{left:16px;right:16px;bottom:18px}
+.media-card-info h3{font-size:clamp(22px,2.3vw,32px);line-height:.95}
+.media-card-info>span{font-size:7px;letter-spacing:1px}
+.media-count{background:var(--red);padding:8px 10px;font-size:9px}
+.archive-link-wrap{margin-top:64px}
+.quote-section{padding-top:150px;padding-bottom:48px;background:var(--red);border-top:0;border-bottom:0;isolation:isolate}
+.quote-section:before{content:'UCB06';position:absolute;z-index:-1;left:-2vw;top:8px;font:clamp(180px,35vw,480px)/.8 'Anton',Impact,sans-serif;color:#17151314;letter-spacing:-.05em;white-space:nowrap}
+.quote-section>p{font-size:clamp(48px,8.5vw,112px);line-height:.86;letter-spacing:-.025em;margin:35px 0 120px;max-width:1100px}
+.quote-section>p span{color:#24100e;text-shadow:none}
+.quote-bottom{padding-top:20px;font-size:9px;letter-spacing:1.5px}
+footer{padding:110px 8vw 32px;background:#11100f;position:relative;isolation:isolate}
+footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:60px;font:clamp(120px,23vw,310px)/.8 'Anton',Impact,sans-serif;color:#eee6d507;white-space:nowrap;pointer-events:none}
+.footer-top{padding-bottom:115px;align-items:flex-end}
+.footer-kicker{letter-spacing:2px;color:#c82027}
+.footer-top h2{font-size:clamp(100px,16vw,210px);line-height:.78;letter-spacing:-.035em}
+.back-top{border-bottom:1px solid var(--red);padding-bottom:14px}
+.footer-bottom{padding-top:28px;gap:28px}
+.socials{gap:10px}
+.socials a{width:40px;height:40px;border:1px solid #eee6d533;display:grid;place-items:center;transition:background .2s,border-color .2s,color .2s}
+.socials a:hover{background:var(--red);border-color:var(--red);color:white}
+.copyright{font-size:8px;letter-spacing:1.4px}
+@media(max-width:1000px){.media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.media-card,.media-card-2,.media-card-3{height:330px}.media-card:nth-child(even),.media-card:nth-child(3){margin-top:0}.media-card:nth-child(2),.media-card:nth-child(4){margin-top:38px}}
+@media(max-width:800px){.culture{padding:82px 7vw 90px}.culture-heading{display:block;margin-bottom:46px}.culture-heading>p{text-align:left;margin-top:42px;font-size:clamp(54px,12vw,78px)}.story-list{margin:0}.story-list:before{left:19px}.story-row{grid-template-columns:40px minmax(0,1fr) 28px;gap:13px;padding:23px 0}.story-number{width:38px;height:38px;font-size:9px}.story-title h3{font-size:clamp(25px,6vw,34px)}.story-title p{font-size:10px;line-height:1.8}.story-type,.story-year{display:none}.story-arrow{width:28px;height:28px}.legacy-section{padding:82px 7vw 85px}.legacy-title{margin:52px 0 38px}.legacy-grid{gap:20px}.legacy-card{min-height:330px;padding:28px 25px}.legacy-card-morocco,.legacy-card-morocco:hover{transform:none}.legacy-card h3{font-size:clamp(42px,10vw,65px)}.legacy-caption{font-size:8px}.legacy-footnote{margin-top:48px;font-size:8px}.media-section{padding:82px 7vw 90px}.media-heading{display:block;margin-bottom:45px}.media-heading>div{margin-top:42px}.media-heading h2{font-size:clamp(68px,14vw,100px)}.media-grid{grid-template-columns:1fr 1fr;gap:15px}.media-card,.media-card-2,.media-card-3{height:290px;margin:0}.media-card:nth-child(2),.media-card:nth-child(4){margin-top:30px}.media-card-info h3{font-size:clamp(22px,5vw,30px)}.quote-section{padding:100px 7vw 38px}.quote-section>p{font-size:clamp(46px,10vw,75px);margin:35px 0 90px}footer{padding:82px 7vw 28px}.footer-top{padding-bottom:75px}.footer-top h2{font-size:clamp(92px,18vw,140px)}}
+@media(max-width:430px){.legacy-card{min-height:290px}.legacy-card h3{font-size:clamp(39px,11vw,52px)}.media-grid{grid-template-columns:1fr}.media-card,.media-card-2,.media-card-3,.media-card:nth-child(2),.media-card:nth-child(4){height:285px;width:100%;margin:0;transform:none}.media-card:nth-child(even){width:90%;justify-self:end}.quote-section>p{font-size:clamp(39px,10vw,48px)}.quote-bottom{font-size:7px;letter-spacing:.8px}.footer-top h2{font-size:clamp(78px,18vw,108px)}.footer-bottom{gap:18px}.socials{order:3;width:100%}.copyright{order:4;width:100%}}

@@ -942,10 +942,15 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
 }
 
 
-/* Seamless section transitions: remove separator lines and outside gaps. */
+/* Seamless transitions across every page section and the footer. */
 main > section,
-main > .hero {
-  margin: 0 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
+main > .hero,
+main > footer {
+  margin-block: 0 !important;
+  border-block: 0 !important;
+}
+
+main > section + section,
+main > section + footer {
+  margin-block-start: 0 !important;
 }

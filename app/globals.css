@@ -985,9 +985,9 @@ main > section + footer {
 }
 .manifesto .cover-slot img{
   z-index:0;
-  inset:10px 10px 31px;
+  inset:10px;
   width:calc(100% - 20px);
-  height:calc(100% - 41px);
+  height:calc(100% - 20px);
   object-fit:cover;
   filter:grayscale(.18) contrast(1.06) saturate(.82);
   transition:transform .5s ease,filter .4s ease;
@@ -1011,18 +1011,7 @@ main > section + footer {
   box-shadow:0 1px 2px #0002;
   pointer-events:none;
 }
-.manifesto .cover-slot:after{
-  content:"";
-  position:absolute;
-  z-index:3;
-  inset:auto 17px 8px auto;
-  width:34px;
-  height:1px;
-  border:0;
-  background:#c9c0b2;
-  opacity:.8;
-  pointer-events:none;
-}
+.manifesto .cover-slot:after{display:none;}
 .manifesto .cover-index{
   z-index:2;
   top:auto;
@@ -1041,7 +1030,7 @@ main > section + footer {
 @media(max-width:800px){
   .manifesto .cover-stack{gap:22px}
   .manifesto .cover-slot{box-shadow:0 2px 2px #0005,0 9px 16px #0008,2px 3px 0 #d8d2c7}
-  .manifesto .cover-slot img{inset:8px 8px 27px;width:calc(100% - 16px);height:calc(100% - 35px)}
+  .manifesto .cover-slot img{inset:8px;width:calc(100% - 16px);height:calc(100% - 16px)}
   .manifesto .cover-slot:before{top:-9px;width:54px;height:19px}
   .manifesto .cover-index{right:11px;bottom:7px;font-size:8px}
 }

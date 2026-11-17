@@ -27,7 +27,7 @@ export default function Home() {
           <span className="brand-name">CRAZYBOYS<span>2006</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#media">ARCHIVE</a><a href="#contact">FOLLOW</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#media">ARCHIVE</a><a href="#videos">KACM VIDEO</a><a href="#contact">FOLLOW</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
@@ -36,6 +36,7 @@ export default function Home() {
             <a href="#story">THE STORY</a>
             <a href="#culture">OUR ROOTS</a>
             <a href="#media">ARCHIVE</a>
+            <a href="#videos">KACM VIDEO</a>
             <a href="#contact">FOLLOW</a>
             <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
           </nav>
@@ -97,6 +98,28 @@ export default function Home() {
           ))}
         </div>
         <div className="archive-link-wrap"><a className="text-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE ORIGINAL UCB06 ARCHIVE <ArrowUpRight size={16} /></a></div>
+      </section>
+
+      <section className="youtube-section" id="videos">
+        <div className="youtube-heading">
+          <SectionLabel>04 / FROM THE CLUB</SectionLabel>
+          <div>
+            <h2>THE LATEST<br /><span>FROM KACM.</span></h2>
+            <p>Watch the latest uploads from Kawkab Athletic Club Marrakech.</p>
+          </div>
+        </div>
+        <a className="youtube-frame" href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer" aria-label="Open the latest KACM videos on YouTube">
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?list=UUm6z94xUh3CYwLtHGyCtJUg"
+            title="Latest videos from Kawkab Athletic Club Marrakech"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+          <span className="youtube-overlay"><Youtube size={34} /><b>WATCH ON YOUTUBE</b><ArrowUpRight size={20} /></span>
+        </a>
+        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
 
       <section className="quote-section" id="archive">

@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-index">UCB06 <span>—</span> MARRAKECH / MOROCCO</div>
-        <div className="hero-side">KAWKAB ATHLETIC CLUB DE MARRAKECH</div>
+        <div className="hero-side">ULTRAS CRAZY BOYS 2006</div>
       </section>
 
       <section className="manifesto" id="story">
@@ -102,16 +102,16 @@ export default function Home() {
 
       <section className="youtube-section" id="videos">
         <div className="youtube-heading">
-          <SectionLabel>04 / FROM THE CLUB</SectionLabel>
+          <SectionLabel>04 / THE ULTRAS CHANNEL</SectionLabel>
           <div>
-            <h2>THE LATEST<br /><span>FROM KACM.</span></h2>
-            <p>Watch the latest uploads from Kawkab Athletic Club Marrakech.</p>
+            <h2>THE LATEST<br /><span>FROM UCB06.</span></h2>
+            <p>The latest videos from the official Ultras Crazy Boys 2006 channel.</p>
           </div>
         </div>
-        <a className="youtube-frame" href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer" aria-label="Open the latest KACM videos on YouTube">
+        <a className="youtube-frame" href="https://www.youtube.com/@theucb06/videos" target="_blank" rel="noreferrer" aria-label="Open the latest KACM videos on YouTube">
           <iframe
-            src="https://www.youtube.com/embed/videoseries?list=UUm6z94xUh3CYwLtHGyCtJUg"
-            title="Latest videos from Kawkab Athletic Club Marrakech"
+            src="https://www.youtube.com/embed/videoseries?list=UUFYI5fxpWCf8c5MYIgeSuFw"
+            title="Latest uploads from Ultras Crazy Boys 2006"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -119,7 +119,7 @@ export default function Home() {
           />
           <span className="youtube-overlay"><Youtube size={34} /><b>WATCH ON YOUTUBE</b><ArrowUpRight size={20} /></span>
         </a>
-        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW CHANNEL <ArrowUpRight size={15} /></a></div>
+        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW UCB06 CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
 
       <section className="spotify-section" id="music">

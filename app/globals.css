@@ -909,3 +909,34 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
   .legacy-artifact figcaption{align-items:flex-start;flex-direction:column;gap:7px}
   .legacy-fact h3{font-size:clamp(40px,11vw,54px)}
 }
+
+
+/* Six-piece UCB06 banner archive */
+.legacy-banner-collection{margin:0 0 72px}
+.legacy-collection-heading{display:flex;justify-content:space-between;gap:16px;padding:0 0 14px;border-bottom:1px solid #17130d88;color:#6d4d1b;font:10px 'DM Mono',monospace;letter-spacing:1.7px}
+.legacy-banner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:24px}
+.legacy-banner{min-width:0;margin:0;padding:8px;background:linear-gradient(135deg,#f4e6c4,#a98748 48%,#ead7a5);border:1px solid #5b431e;box-shadow:0 2px 0 #fff8 inset,0 12px 24px #35240d38,0 5px 0 #4a3517;transform:rotate(var(--banner-tilt,0deg));transition:transform .3s ease,box-shadow .3s ease}
+.legacy-banner:nth-child(2),.legacy-banner:nth-child(5){--banner-tilt:.5deg}
+.legacy-banner:nth-child(3),.legacy-banner:nth-child(4){--banner-tilt:-.45deg}
+.legacy-banner:hover{transform:translateY(-7px) rotate(0);box-shadow:0 2px 0 #fff8 inset,0 20px 30px #35240d55,0 5px 0 #4a3517}
+.legacy-banner-image{height:clamp(145px,18vw,250px);position:relative;overflow:hidden;background:#171513}
+.legacy-banner-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#08070655,transparent 55%);pointer-events:none}
+.legacy-banner-image img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.07) saturate(.86);transition:transform .5s ease}
+.legacy-banner:hover .legacy-banner-image img{transform:scale(1.045)}
+.legacy-banner-index{position:absolute;z-index:1;right:10px;bottom:9px;color:#f2dfb0;font:9px 'DM Mono',monospace;letter-spacing:1.3px;text-shadow:0 1px 5px #000}
+.legacy-banner figcaption{display:flex;justify-content:space-between;gap:8px;padding:12px 3px 4px;color:#49371d;font:8px 'DM Mono',monospace;letter-spacing:.8px}
+.legacy-banner figcaption span:first-child{font-weight:700;color:#8d1d20}
+.legacy-collection-note{margin:25px 0 0;color:#7f1c1f;text-align:center;font:10px 'DM Mono',monospace;font-weight:700;letter-spacing:2px}
+@media(max-width:800px){
+ .legacy-banner-collection{margin-bottom:48px}
+ .legacy-banner-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+ .legacy-banner-image{height:clamp(135px,31vw,220px)}
+ .legacy-banner figcaption{font-size:7px;letter-spacing:.4px}
+}
+@media(max-width:430px){
+ .legacy-banner-grid{gap:11px}
+ .legacy-banner{padding:5px}
+ .legacy-banner-image{height:135px}
+ .legacy-banner figcaption{flex-direction:column;gap:5px}
+ .legacy-collection-heading{font-size:8px;letter-spacing:1px}
+}

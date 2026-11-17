@@ -976,3 +976,32 @@ main > section + footer {
 @media(max-width:800px){
   .section-blend{height:clamp(42px,10vw,68px)}
 }
+
+
+/* Replace standalone gradient bands with subtle blends at section entrances. */
+.section-blend{display:none!important}
+.manifesto{--blend-from:#171513}
+.culture{--blend-from:#171513}
+.rituals-section{--blend-from:#1b1916}
+.legacy-section{--blend-from:#c82027}
+.media-section{--blend-from:#d5b56f}
+.youtube-section{--blend-from:#e2d7c1}
+.spotify-section{--blend-from:#171513}
+.quote-section{--blend-from:#eee6d5}
+footer{--blend-from:#c82027}
+main > section:not(.hero),
+main > footer{
+  position:relative;
+}
+main > section:not(.hero)::before,
+main > footer::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  left:0;
+  right:0;
+  height:clamp(34px,5vw,64px);
+  pointer-events:none;
+  background:linear-gradient(180deg,var(--blend-from) 0%,color-mix(in srgb,var(--blend-from) 48%,transparent) 42%,transparent 100%);
+}

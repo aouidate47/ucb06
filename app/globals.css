@@ -1045,3 +1045,71 @@ main > section + footer {
   .manifesto .cover-slot:before{top:-9px;width:54px;height:19px}
   .manifesto .cover-index{right:11px;bottom:7px;font-size:8px}
 }
+
+
+/* Matchday video as a taped scrapbook print. Keep the actual video viewport at 16:9. */
+.rituals-section .matchday-video{
+  position:relative;
+  isolation:isolate;
+  display:block;
+  box-sizing:border-box;
+  width:calc(100% + 16vw);
+  margin:76px 0 0 -8vw;
+  padding:22px 22px 48px;
+  aspect-ratio:auto;
+  overflow:visible;
+  background:#f7f4ec;
+  border:0;
+  border-radius:1px;
+  box-shadow:0 2px 3px #0005,0 16px 30px #0007,4px 5px 0 #d8d2c7;
+}
+.rituals-section .matchday-video:before,
+.rituals-section .matchday-video:after{
+  content:"";
+  position:absolute;
+  z-index:3;
+  top:-12px;
+  width:76px;
+  height:26px;
+  background:linear-gradient(135deg,#fffefaed,#e9e4d8c9);
+  border-left:1px solid #d8d1c4aa;
+  border-right:1px solid #d8d1c4aa;
+  box-shadow:0 1px 2px #0002;
+  pointer-events:none;
+}
+.rituals-section .matchday-video:before{left:13%;transform:rotate(-7deg)}
+.rituals-section .matchday-video:after{right:13%;transform:rotate(5deg)}
+.rituals-section .matchday-video video{
+  position:relative;
+  inset:auto;
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  background:#080808;
+  border:0;
+  border-radius:0;
+  box-shadow:0 2px 8px #0003;
+}
+@media(max-width:800px){
+  .rituals-section .matchday-video{
+    width:calc(100% + 14vw);
+    margin:56px 0 0 -7vw;
+    padding:12px 12px 34px;
+    aspect-ratio:auto;
+  }
+  .rituals-section .matchday-video:before,
+  .rituals-section .matchday-video:after{
+    top:-9px;
+    width:52px;
+    height:19px;
+  }
+  .rituals-section .matchday-video:before{left:12%}
+  .rituals-section .matchday-video:after{right:12%}
+  .rituals-section .matchday-video video{
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+  }
+}

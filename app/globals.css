@@ -609,3 +609,17 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
  .pitch-center-circle{width:85px;height:85px}
  .stadium-stands{font-size:6px}
 }
+
+
+/* Footer alignment: emblem left, social links right on one row */
+.footer-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px;row-gap:18px}
+.footer-brand{grid-column:1;grid-row:1;justify-self:start}
+.footer-bottom .socials{grid-column:2;grid-row:1;justify-self:end;width:auto;order:initial}
+.footer-bottom .copyright{grid-column:1 / -1;grid-row:2;width:auto;order:initial}
+@media(max-width:430px){
+  .footer-bottom{grid-template-columns:minmax(0,1fr) auto;gap:14px}
+  .footer-brand{grid-column:1;grid-row:1}
+  .footer-bottom .socials{grid-column:2;grid-row:1;width:auto;justify-self:end;gap:7px}
+  .footer-bottom .socials a{width:34px;height:34px}
+  .footer-bottom .copyright{grid-column:1 / -1;grid-row:2;width:auto}
+}

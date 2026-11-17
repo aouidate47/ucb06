@@ -24,12 +24,7 @@ const milestones = [
   { year: "2012", title: "THE ARCHIVE", text: "Old group publications documented trips, scarves, the curva and the life around KACM." },
 ];
 
-const matchdayRituals = [
-  { number: "01", title: "THE GATHERING", tag: "BEFORE KICK-OFF", text: "The city starts to move toward the ground. Familiar faces meet, colours come out and the matchday takes shape." },
-  { number: "02", title: "THE FIRST VOICE", tag: "THE STAND WAKES UP", text: "One voice becomes many. The curva finds its rhythm and the support does not wait for the score." },
-  { number: "03", title: "THE DISPLAY", tag: "COLOUR IN THE AIR", text: "Flags, banners and choreography turn the stand into a statement that can be seen as well as heard." },
-  { number: "04", title: "THE LAST MINUTE", tag: "UNTIL THE END", text: "Whatever happens on the pitch, the commitment is measured across the whole match — not just the result." },
-];
+
 function SectionLabel({ children }) {
   return <div className="section-label"><span />{children}</div>;
 }
@@ -129,24 +124,15 @@ export default function Home() {
           </div>
           <p className="rituals-intro">A matchday is built from moments. The walk, the voices, the colours and the loyalty that stays after the final whistle.</p>
         </div>
-        <div className="stadium-bowl">
-          <img className="stadium-photo" src="/images/el-harti-stadium.jpg" alt="Stade El Harti in Marrakech, with its running track and red and blue stands" />
-          <div className="stadium-image-shade" aria-hidden="true" />
-          <div className="stadium-pitch-overlay">
-            <div className="rituals-carousel" aria-label="Matchday culture cards. Swipe horizontally to explore all four moments.">
-              <div className="rituals-track">
-                {matchdayRituals.map((item, index) => (
-                  <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
-                    <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
-                    <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
-                    <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
-                    <span className="ritual-card-line" />
-                  </article>
-                ))}
-              </div>
-            </div>
-            <div className="stadium-swipe-note"><span>01 — 04</span><span>SWIPE TO EXPLORE</span><span>UCB06</span></div>
-          </div>
+        <div className="stadium-bowl matchday-video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/kiPq4b_UsO4?rel=0"
+            title="UCB06 matchday video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </div>
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>

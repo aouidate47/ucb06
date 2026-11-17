@@ -150,6 +150,7 @@ export default function Home() {
           <p className="rituals-intro">A matchday is built from moments. The walk, the voices, the colours and the loyalty that stays after the final whistle.</p>
         </div>
         <div className="stadium-bowl matchday-video">
+          <span className="matchday-red-washi" aria-hidden="true" />
           <video controls playsInline preload="metadata" aria-label="UCB06 matchday video">
             <source src="/videos/how-we-live-it-3min.mp4" type="video/mp4" />
             Your browser does not support the video element.

@@ -553,3 +553,59 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
   .quote-section{min-height:470px}
   .quote-section>p{font-size:clamp(42px,11vw,52px)}
 }
+
+
+/* Matchday stadium: a full football pitch with terraces and markings */
+.stadium-bowl{margin-top:76px;padding:18px;background:#171513;border:1px solid #eee6d54d;box-shadow:12px 12px 0 #171513;position:relative}
+.stadium-stands{min-height:42px;padding:0 15px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#eee6d5;font:9px 'DM Mono',monospace;letter-spacing:1.6px;background:repeating-linear-gradient(90deg,#292522 0 12px,#332d28 12px 15px);border:1px solid #ffffff12}
+.stadium-stands-bottom{margin-top:14px}
+.stadium-pitch{position:relative;min-height:560px;padding:52px 5.5%;background-color:#276b3c;background-image:repeating-linear-gradient(90deg,#2d7844 0 9%,#286d3d 9% 18%);border:2px solid #e9e6d2;overflow:hidden}
+.stadium-pitch:before{content:'';position:absolute;inset:12px;border:2px solid #f2f0dfb8;pointer-events:none}
+.pitch-markings{position:absolute;inset:12px;pointer-events:none;border:0}
+.pitch-halfway{position:absolute;left:50%;top:0;bottom:0;width:2px;background:#f2f0dfb8;transform:translateX(-50%)}
+.pitch-center-circle{position:absolute;left:50%;top:50%;width:190px;height:190px;border:2px solid #f2f0dfb8;border-radius:50%;transform:translate(-50%,-50%)}
+.pitch-center-spot{position:absolute;left:50%;top:50%;width:8px;height:8px;background:#f2f0df;border-radius:50%;transform:translate(-50%,-50%)}
+.pitch-box{position:absolute;top:50%;width:14%;height:48%;border:2px solid #f2f0dfb8;transform:translateY(-50%)}
+.pitch-box-left{left:0;border-left:0}
+.pitch-box-right{right:0;border-right:0}
+.pitch-goal{position:absolute;top:50%;width:4%;height:20%;border:2px solid #f2f0dfb8;transform:translateY(-50%)}
+.pitch-goal-left{left:-4%;border-left:0}
+.pitch-goal-right{right:-4%;border-right:0}
+.pitch-corner{position:absolute;width:20px;height:20px;border:2px solid #f2f0dfb8;border-radius:50%}
+.pitch-corner-one{top:-10px;left:-10px}
+.pitch-corner-two{top:-10px;right:-10px}
+.pitch-corner-three{bottom:-10px;left:-10px}
+.pitch-corner-four{bottom:-10px;right:-10px}
+.stadium-pitch .rituals-grid{position:relative;z-index:1;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0}
+.stadium-pitch .ritual-card{min-height:390px;background:#eee6d5f2;border:1px solid #171513;box-shadow:5px 5px 0 #171513}
+.stadium-pitch .ritual-card:nth-child(even){transform:translateY(28px)}
+.stadium-pitch .ritual-card:hover{transform:translateY(-5px) rotate(-.5deg);box-shadow:8px 9px 0 #171513}
+.stadium-pitch .ritual-card:nth-child(even):hover{transform:translateY(23px) rotate(.5deg)}
+.stadium-pitch .ritual-graphic{height:125px}
+@media(max-width:1000px){
+ .stadium-pitch{padding:42px 4%;min-height:0}
+ .stadium-pitch .rituals-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .stadium-pitch .ritual-card{min-height:330px}
+ .stadium-pitch .ritual-card:nth-child(even){transform:none}
+ .pitch-center-circle{width:140px;height:140px}
+}
+@media(max-width:800px){
+ .stadium-bowl{margin-top:48px;padding:10px;box-shadow:6px 6px 0 #171513}
+ .stadium-stands{min-height:34px;font-size:7px;letter-spacing:.8px;padding:0 8px}
+ .stadium-pitch{padding:30px 4%;background-size:100% 100%}
+ .stadium-pitch:before{inset:8px}
+ .pitch-markings{inset:8px}
+ .pitch-center-circle{width:100px;height:100px}
+ .pitch-box{height:34%;width:12%}
+ .stadium-pitch .rituals-grid{gap:10px}
+ .stadium-pitch .ritual-card{min-height:300px;padding:12px}
+ .stadium-pitch .ritual-graphic{height:100px;margin:14px -12px}
+}
+@media(max-width:430px){
+ .stadium-pitch{padding:24px 5%}
+ .stadium-pitch .rituals-grid{grid-template-columns:1fr}
+ .stadium-pitch .ritual-card,.stadium-pitch .ritual-card:nth-child(even){min-height:265px;transform:none}
+ .stadium-pitch .ritual-card:hover{transform:translateY(-3px)}
+ .pitch-center-circle{width:85px;height:85px}
+ .stadium-stands{font-size:6px}
+}

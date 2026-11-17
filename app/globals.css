@@ -1113,3 +1113,30 @@ main > section + footer {
     aspect-ratio:16/9;
   }
 }
+
+
+/* Extra red washi tape strip layered over the Matchday paper mount. */
+.rituals-section .matchday-red-washi{
+  position:absolute;
+  z-index:4;
+  top:-13px;
+  left:50%;
+  width:92px;
+  height:29px;
+  transform:translateX(-50%) rotate(3deg);
+  background:
+    repeating-linear-gradient(135deg,transparent 0 7px,#ffffff20 7px 9px),
+    linear-gradient(135deg,#d94a43ed,#a91520e8);
+  border-left:1px solid #8e1018aa;
+  border-right:1px solid #8e1018aa;
+  box-shadow:0 1px 3px #0003;
+  opacity:.94;
+  pointer-events:none;
+}
+@media(max-width:800px){
+  .rituals-section .matchday-red-washi{
+    top:-10px;
+    width:66px;
+    height:22px;
+  }
+}

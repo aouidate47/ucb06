@@ -220,8 +220,8 @@ export default function Home() {
           <figcaption><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · THE CURVA SUD</span></figcaption>
         </figure>
         <div className="banner-story-facts">
-          <div><span>01 / AFRICA</span><h3>THE LONGEST<br />ULTRAS BÂCHE.</h3><p>The group's defining banner and a statement of scale, identity and belonging.</p></div>
-          <div><span>02 / MOROCCO</span><h3>THE AWAY-TRAVEL<br />BÂCHE.</h3><p>A travelling symbol of UCB06, carried on the road in support of Kawkab.</p></div>
+          <div><span>MADE BY THE CURVA</span><h3>MORE THAN<br />A NAME.</h3><p>Every letter represents the people who stand behind it, protect it and carry it through every generation.</p></div>
+          <div><span>HOME AND AWAY</span><h3>WHEREVER<br />WE GO.</h3><p>The banner travels with the group — from the Curva Sud to every road that leads to Kawkab.</p></div>
         </div>
       </section>
 
@@ -232,10 +232,10 @@ export default function Home() {
           <h2>THE ROAD<br /><span>IS OURS.</span></h2>
           <p>Home and away, the journey is part of the story. Every trip adds another memory to the history of the Curva.</p>
         </div>
-        <div className="away-days-grid">
-          <article className="away-day-card away-day-large"><img src="/images/cover2.jpg" alt="UCB06 supporters gathered in the stands" loading="lazy" /><div><span>01 / THE JOURNEY</span><h3>FOLLOW THE COLOURS.</h3></div></article>
-          <article className="away-day-card"><img src="/images/cover5.jpeg" alt="Historic UCB06 supporters archive photograph" loading="lazy" /><div><span>02 / THE GENERATIONS</span><h3>ONE CURVA. MANY ROADS.</h3></div></article>
-          <article className="away-day-card"><img src="/images/cover4.png" alt="UCB06 banner carried by supporters" loading="lazy" /><div><span>03 / THE IDENTITY</span><h3>NEVER JUST A TRIP.</h3></div></article>
+        <div className="away-days-grid away-days-editorial">
+          <article className="away-day-card away-day-large"><div><span>01 / THE DEPARTURE</span><h3>THE ROAD<br />STARTS HERE.</h3><p>Gathering in Marrakech. Preparing the colours. Moving together.</p></div></article>
+          <article className="away-day-card"><div><span>02 / THE JOURNEY</span><h3>EVERY CITY<br />A MEMORY.</h3><p>Every déplacement becomes part of the group's history.</p></div></article>
+          <article className="away-day-card"><div><span>03 / THE RETURN</span><h3>ALWAYS<br />BACK TO THE CURVA.</h3><p>Different roads. The same colours. The same commitment.</p></div></article>
         </div>
         <a className="text-link away-archive-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE HISTORICAL TRAVEL ARCHIVE <ArrowUpRight size={16} /></a>
       </section>

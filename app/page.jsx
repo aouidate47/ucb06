@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       <section className="culture" id="culture">
-        <div className="culture-heading"><SectionLabel>02 / OUR HISTORY</SectionLabel><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
+        <div className="culture-heading"><SectionLabel>02 / THE TIMELINE</SectionLabel><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
         <div className="story-list">
           {milestones.map((item, index) => (
             <article className="story-row" key={item.year}>
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       <section className="legacy-section" id="legacy">
-        <div className="legacy-topline"><SectionLabel>03 / A RECORD OF THE CURVA</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
+        <div className="legacy-topline"><SectionLabel>03 / OUR LEGACY</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
         <div className="legacy-title"><p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p></div>
         <div className="legacy-grid">
           <article className="legacy-card legacy-card-africa">
@@ -134,12 +134,12 @@ export default function Home() {
       </section>
 
       <section className="media-section" id="media">
-        <div className="media-heading"><SectionLabel>03 / THE ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>Historical photographs and material from the group's public archive.</p></div></div>
+        <div className="media-heading"><SectionLabel>04 / THE PHOTO ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
         <div className="media-grid">
-          {archiveImages.slice(0, 3).map((item, index) => (
+          {archiveImages.map((item, index) => (
             <a className={`media-card media-card-${index + 1}`} href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer" key={item.title}>
               <div className="media-photo" style={{ backgroundImage: `url("${item.image}")` }} />
-              <span className="media-count">0{index + 1} / 03</span>
+              <span className="media-count">0{index + 1} / 04</span>
               <div className="media-card-info"><span>{item.category}</span><h3>{item.title}</h3><ArrowUpRight size={20} /></div>
             </a>
           ))}
@@ -152,7 +152,7 @@ export default function Home() {
           <SectionLabel>05 / THE ULTRAS CHANNEL</SectionLabel>
           <div>
             <h2>THE LATEST<br /><span>FROM UCB06.</span></h2>
-            <p>The latest videos from the official Ultras Crazy Boys 2006 channel.</p>
+            <p>Matchday footage, away days and the sound of the stands. Straight from the UCB06 channel.</p>
           </div>
         </div>
         <a className="youtube-frame" href="https://www.youtube.com/@theucb06/videos" target="_blank" rel="noreferrer" aria-label="Open the latest UCB06 videos on YouTube">
@@ -174,7 +174,7 @@ export default function Home() {
           <SectionLabel>06 / THE SOUND OF THE CURVA</SectionLabel>
           <div>
             <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
-            <p>Listen to the music and releases connected to Crazyboys 2006.</p>
+            <p>The soundtrack of the curva. Discover the music connected to Crazy Boys 2006.</p>
           </div>
         </div>
         <div className="spotify-card">

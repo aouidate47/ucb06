@@ -145,15 +145,17 @@ export default function Home() {
               <span className="pitch-corner pitch-corner-three" />
               <span className="pitch-corner pitch-corner-four" />
             </div>
-            <div className="rituals-grid">
-              {matchdayRituals.map((item, index) => (
-                <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
-                  <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
-                  <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
-                  <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
-                  <span className="ritual-card-line" />
-                </article>
-              ))}
+            <div className="rituals-carousel" aria-label="Matchday culture cards. Swipe horizontally to explore all four moments.">
+              <div className="rituals-track">
+                {matchdayRituals.map((item, index) => (
+                  <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
+                    <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
+                    <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
+                    <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
+                    <span className="ritual-card-line" />
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
           <div className="stadium-stands stadium-stands-bottom" aria-hidden="true"><span>ALWAYS BEHIND THE TEAM</span><span>UCB06 / 2006</span></div>

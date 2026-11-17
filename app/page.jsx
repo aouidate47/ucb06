@@ -152,7 +152,7 @@ export default function Home() {
         </div>
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>
-      <div className="section-blend blend-culture-red" aria-hidden="true" />
+      <div className="section-blend blend-red-gold" aria-hidden="true" />
       <section className="legacy-section" id="legacy">
         <div className="legacy-topline">
           <span>CRAZY BOYS 2006 · MARRAKECH</span>

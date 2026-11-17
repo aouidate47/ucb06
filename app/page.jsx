@@ -250,13 +250,15 @@ export default function Home() {
         <div className="footer-bottom">
           <a className="brand footer-brand" href="#"><img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" /></a>
           
-          <div className="socials">
-            <a href="https://youtube.com/@theucb06" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on YouTube"><Youtube size={18} /></a>
-            <a href="https://www.instagram.com/ucb06_" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Instagram"><Instagram size={18} /></a>
-            <a href="https://www.facebook.com/share/1CjqFyPmrd/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Facebook"><Facebook size={18} /></a>
-            <a href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Spotify"><Music2 size={18} /></a>
+          <div className="footer-social-column">
+            <div className="socials">
+              <a href="https://youtube.com/@theucb06" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on YouTube"><Youtube size={18} /></a>
+              <a href="https://www.instagram.com/ucb06_" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Instagram"><Instagram size={18} /></a>
+              <a href="https://www.facebook.com/share/1CjqFyPmrd/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Facebook"><Facebook size={18} /></a>
+              <a href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Spotify"><Music2 size={18} /></a>
+            </div>
+            <span className="copyright">© UCB06 — ALL RIGHTS RESERVED</span>
           </div>
-          <span className="copyright">© UCB06 — ALL RIGHTS RESERVED</span>
         </div>
       </footer>
     </main>

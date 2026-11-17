@@ -639,3 +639,38 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
   .footer-bottom .footer-social-column .socials a{width:34px;height:34px}
   .footer-bottom .footer-social-column .copyright{font-size:7px;letter-spacing:.7px}
 }
+
+
+/* El Harti-inspired stadium bowl: 16:9 pitch, terraces and swipe-through matchday cards */
+.stadium-bowl{aspect-ratio:16/9;min-height:0;padding:clamp(10px,1.6vw,22px);display:grid;grid-template-rows:13% minmax(0,1fr) 13%;gap:clamp(6px,1vw,14px);overflow:hidden;background:radial-gradient(ellipse at 50% 50%,#37302b 0%,#211e1b 68%,#151311 100%);box-shadow:12px 12px 0 #171513}
+.stadium-bowl:before,.stadium-bowl:after{content:"";position:absolute;left:2.5%;right:2.5%;height:10%;pointer-events:none;z-index:2;background:radial-gradient(ellipse at center,#b9aa91 0 2px,transparent 2.8px) 0 0/15px 11px,repeating-linear-gradient(180deg,#4c443a 0 5px,#28231f 5px 8px);border:1px solid #8c7960;opacity:.9}
+.stadium-bowl:before{top:1.5%}.stadium-bowl:after{bottom:1.5%}
+.stadium-stands{min-height:0;position:relative;z-index:3;justify-content:center;gap:18px;overflow:hidden;color:#eee6d5;background:radial-gradient(ellipse at center,#c2b398 0 2px,transparent 2.8px) 0 0/15px 11px,repeating-linear-gradient(180deg,#554b3e 0 7px,#302922 7px 11px);border:1px solid #9b896f;box-shadow:inset 0 0 0 5px #171513,inset 0 0 0 7px #75634e;font-size:clamp(6px,.7vw,9px)}
+.stadium-stands span{position:relative;z-index:1;background:#171513cc;padding:4px 8px}
+.stadium-pitch{aspect-ratio:auto;min-height:0;height:100%;padding:0;display:flex;align-items:center;justify-content:center;background-color:#286b3d;background-image:repeating-linear-gradient(90deg,#307b48 0 9%,#286b3d 9% 18%);border:clamp(4px,.7vw,8px) solid #b7a78e;box-shadow:0 0 0 4px #171513,0 0 0 6px #8b7962}
+.stadium-pitch:before{inset:8px;border:2px solid #f2f0dfc9}.pitch-markings{inset:8px}
+.pitch-center-circle{width:clamp(65px,9vw,120px);height:clamp(65px,9vw,120px)}.pitch-box{height:48%;width:12%}.pitch-goal{height:20%}
+.stadium-pitch .rituals-carousel{position:relative;z-index:4;width:100%;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;touch-action:pan-x pan-y}
+.stadium-pitch .rituals-carousel::-webkit-scrollbar{display:none}
+.stadium-pitch .rituals-track{display:flex;width:100%;height:100%}
+.stadium-pitch .ritual-card{flex:0 0 100%;width:100%;min-width:100%;height:100%;min-height:0;max-height:100%;margin:0;padding:clamp(12px,2vw,24px);display:flex;flex-direction:column;justify-content:space-between;scroll-snap-align:center;scroll-snap-stop:always;background:#eee6d5f2;border:1px solid #171513;box-shadow:none;overflow:hidden;transform:none!important}
+.stadium-pitch .ritual-card-top{font-size:clamp(8px,.8vw,10px)}
+.stadium-pitch .ritual-graphic{flex:0 0 auto;width:100%;height:clamp(50px,8vh,100px);margin:clamp(6px,1vh,12px) 0}
+.stadium-pitch .ritual-card-copy{margin-top:auto}.stadium-pitch .ritual-card-copy h3{font-size:clamp(24px,3vw,42px);margin-bottom:8px}.stadium-pitch .ritual-card-copy p{font-size:clamp(9px,.95vw,12px);line-height:1.55;max-width:620px}.stadium-pitch .ritual-card-line{margin-top:10px}
+.stadium-stands-bottom{margin-top:0}
+@media(max-width:800px){
+ .stadium-bowl{aspect-ratio:16/9;margin-top:36px;padding:9px;gap:6px;box-shadow:6px 6px 0 #171513}
+ .stadium-bowl:before,.stadium-bowl:after{background-size:12px 9px,100% 100%}
+ .stadium-stands{font-size:6px;letter-spacing:.6px;gap:5px}.stadium-stands span{padding:3px 5px}
+ .stadium-pitch{padding:0;border-width:5px}.stadium-pitch:before{inset:5px}.pitch-markings{inset:5px}
+ .stadium-pitch .ritual-card{padding:10px 12px}.stadium-pitch .ritual-card-top span:last-child{font-size:7px}
+ .stadium-pitch .ritual-graphic{height:clamp(34px,7vh,64px);margin:4px 0}
+ .stadium-pitch .ritual-card-copy h3{font-size:clamp(18px,4vw,28px);margin-bottom:4px}
+ .stadium-pitch .ritual-card-copy p{font-size:clamp(7px,1.6vw,10px);line-height:1.35}.stadium-pitch .ritual-card-line{height:3px;margin-top:5px}
+}
+@media(max-width:430px){
+ .stadium-bowl{aspect-ratio:16/9;padding:7px;gap:5px}.stadium-stands{font-size:5px;letter-spacing:.25px}.stadium-stands span{padding:2px 4px}
+ .stadium-pitch .ritual-card{padding:8px 10px}.stadium-pitch .ritual-card-top{font-size:7px}
+ .stadium-pitch .ritual-graphic{height:clamp(28px,6vh,48px);margin:3px 0}
+ .stadium-pitch .ritual-card-copy h3{font-size:clamp(16px,4.6vw,21px)}.stadium-pitch .ritual-card-copy p{font-size:7px;line-height:1.3}
+}

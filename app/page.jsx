@@ -120,6 +120,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <div className="section-blend blend-culture-red" aria-hidden="true" />
 
       <section className="rituals-section" id="rituals">
         <div className="rituals-head">

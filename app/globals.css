@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap');
 
 :root{--red:#c82027;--red-dark:#8f171d;--ink:#171513;--paper:#eee6d5;--paper2:#e2d7c1;--muted:#766f64;--line:#b9ad99}
 *{box-sizing:border-box}
@@ -70,8 +70,7 @@ h1 em{font-style:normal;color:var(--red);padding-left:8vw}
 .cover-slot:hover{transform:rotate(0) translateY(-4px);border-color:#e8454b}
 .text-link{display:inline-flex;align-items:center;gap:18px;margin-top:22px;font:500 10px 'DM Mono',monospace;letter-spacing:1px;border-bottom:2px solid var(--ink);padding-bottom:12px;text-transform:uppercase}
 .text-link svg{color:var(--red)}
-.manifesto-stamp{position:absolute;right:5vw;bottom:-60px;font:110px/.7 'Anton',sans-serif;color:#d8cbb6;transform:rotate(-12deg);text-align:center;-webkit-text-stroke:1px #c4b69f}
-.manifesto-stamp small{font-size:55px}
+.manifesto-stamp{position:absolute;z-index:2;right:3vw;bottom:-62px;width:min(34vw,430px);height:auto;display:block;object-fit:contain;transform:rotate(-9deg);filter:drop-shadow(5px 8px 3px #0005);pointer-events:none}
 .culture{padding:110px 10.5vw 125px;background:#1b1916;color:var(--paper);position:relative}
 .culture:after{content:'UCB06  /  MARRAKECH';position:absolute;right:-25px;top:50%;font:80px 'Anton',sans-serif;color:#ffffff08;transform:rotate(90deg);pointer-events:none}
 .culture-heading{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:75px}
@@ -148,7 +147,7 @@ h1{font-size:clamp(100px,22vw,175px);margin:45px 0 35px}
 .cover-stack-right{order:3}
 .cover-index{font-size:26px}
 .manifesto h2{font-size:clamp(54px,13vw,88px)}
-.manifesto-stamp{font-size:90px;right:4vw;bottom:-35px}
+.manifesto-stamp{width:min(48vw,260px);right:2vw;bottom:-28px}
 .culture-heading{margin-bottom:48px;gap:25px}
 .culture-heading>p{font-size:35px}
 .story-row{grid-template-columns:34px 1fr 30px;gap:12px;padding:22px 0}

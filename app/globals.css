@@ -940,3 +940,12 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
  .legacy-banner figcaption{flex-direction:column;gap:5px}
  .legacy-collection-heading{font-size:8px;letter-spacing:1px}
 }
+
+
+/* Seamless section transitions: remove separator lines and outside gaps. */
+main > section,
+main > .hero {
+  margin: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}

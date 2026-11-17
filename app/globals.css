@@ -954,3 +954,25 @@ main > section + section,
 main > section + footer {
   margin-block-start: 0 !important;
 }
+
+
+/* Soft colour bridges: preserve each section's identity while blending its edges. */
+.section-blend{
+  position:relative;
+  z-index:2;
+  display:block;
+  height:clamp(54px,7vw,92px);
+  margin-block:-1px;
+  pointer-events:none;
+}
+.blend-ink-culture{background:linear-gradient(180deg,#171513 0%,#1b1916 100%)}
+.blend-culture-red{background:linear-gradient(180deg,#1b1916 0%,#c82027 100%)}
+.blend-red-gold{background:linear-gradient(180deg,#c82027 0%,#d5b56f 100%)}
+.blend-gold-paper{background:linear-gradient(180deg,#b28d45 0%,#e2d7c1 100%)}
+.blend-paper-dark{background:linear-gradient(180deg,#e2d7c1 0%,#171513 100%)}
+.blend-dark-paper{background:linear-gradient(180deg,#171513 0%,#eee6d5 100%)}
+.blend-paper-red{background:linear-gradient(180deg,#eee6d5 0%,#c82027 100%)}
+.blend-red-dark{background:linear-gradient(180deg,#c82027 0%,#171513 100%)}
+@media(max-width:800px){
+  .section-blend{height:clamp(42px,10vw,68px)}
+}

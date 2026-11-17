@@ -56,6 +56,7 @@ export default function Home() {
       </header>
 
       <section className="hero">
+        <div className="graffiti-spray-layer spray-hero" aria-hidden="true" />
         <HeroVideo />
         <div className="hero-grain" />
         <div className="hero-content">
@@ -66,6 +67,7 @@ export default function Home() {
       </section>
 
       <section className="manifesto" id="story">
+        <div className="graffiti-spray-layer spray-story" aria-hidden="true" />
         <img className="story-tagline" src="/images/story-begins-marrakech.svg" alt="25 December 2006. A story begins in Marrakech." />
         <div className="manifesto-grid">
           <div className="cover-stack cover-stack-left">
@@ -124,6 +126,7 @@ export default function Home() {
       </section>
 
       <section className="culture" id="culture">
+        <div className="graffiti-spray-layer spray-roots" aria-hidden="true" />
         <div className="culture-heading"><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
         <div className="story-list">
           {milestones.map((item, index) => (
@@ -139,6 +142,7 @@ export default function Home() {
       </section>
 
       <section className="rituals-section" id="rituals">
+        <div className="graffiti-spray-layer spray-matchday" aria-hidden="true" />
         <div className="rituals-head">
           
           <div className="rituals-title">
@@ -157,6 +161,7 @@ export default function Home() {
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>
       <section className="legacy-section" id="legacy">
+        <div className="graffiti-spray-layer spray-legacy" aria-hidden="true" />
         <div className="legacy-topline">
           <span>CRAZY BOYS 2006 · MARRAKECH</span>
           <span>EST. 25 DECEMBER 2006</span>
@@ -201,6 +206,7 @@ export default function Home() {
       </section>
 
       <section className="media-section" id="media">
+        <div className="graffiti-spray-layer spray-archive" aria-hidden="true" />
         <div className="media-heading"><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
         <div className="media-grid">
           {archiveImages.map((item, index) => (
@@ -215,6 +221,7 @@ export default function Home() {
       </section>
 
       <section className="youtube-section" id="videos">
+        <div className="graffiti-spray-layer spray-youtube" aria-hidden="true" />
         <div className="youtube-heading">
           
           <div>
@@ -237,6 +244,7 @@ export default function Home() {
       </section>
 
       <section className="spotify-section" id="music">
+        <div className="graffiti-spray-layer spray-music" aria-hidden="true" />
         <div className="spotify-heading">
           
           <div>
@@ -260,12 +268,14 @@ export default function Home() {
       </section>
 
       <section className="quote-section" id="archive">
+        <div className="graffiti-spray-layer spray-quote" aria-hidden="true" />
         <div className="quote-mark">“</div>
         <p>OUR CITY. OUR CLUB.<br />OUR <span>UNBREAKABLE</span> BOND.</p>
         <div className="quote-bottom"><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · MOROCCO</span></div>
       </section>
 
       <footer id="contact">
+        <div className="graffiti-spray-layer spray-footer" aria-hidden="true" />
         <div className="footer-top"><div><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
         <div className="footer-bottom">
           <a className="brand footer-brand" href="#"><img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" /></a>

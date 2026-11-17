@@ -240,7 +240,7 @@ export default function Home() {
           />
           <span className="youtube-overlay"><Youtube size={34} /><b>WATCH ON YOUTUBE</b><ArrowUpRight size={20} /></span>
         </a>
-        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW OFFICIAL CHANNEL <ArrowUpRight size={15} /></a></div>
+        <div className="youtube-bottom"><a href="https://www.youtube.com/@theucb06/videos" target="_blank" rel="noreferrer">VISIT UCB06 CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
 
       <section className="spotify-section" id="music">

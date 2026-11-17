@@ -623,3 +623,19 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
   .footer-bottom .socials a{width:34px;height:34px}
   .footer-bottom .copyright{grid-column:1 / -1;grid-row:2;width:auto}
 }
+
+
+/* Keep the copyright directly beneath the footer social icons */
+.footer-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px;row-gap:0}
+.footer-brand{grid-column:1;grid-row:1 / span 2;align-self:center;justify-self:start}
+.footer-bottom .footer-social-column{grid-column:2;grid-row:1 / span 2;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.footer-bottom .footer-social-column .socials{display:flex;justify-content:flex-end;width:auto;order:initial}
+.footer-bottom .footer-social-column .copyright{display:block;width:auto;order:initial;text-align:right;white-space:nowrap}
+@media(max-width:430px){
+  .footer-bottom{grid-template-columns:minmax(0,1fr) auto;gap:0}
+  .footer-brand{grid-column:1;grid-row:1 / span 2}
+  .footer-bottom .footer-social-column{grid-column:2;grid-row:1 / span 2;gap:8px}
+  .footer-bottom .footer-social-column .socials{gap:7px}
+  .footer-bottom .footer-social-column .socials a{width:34px;height:34px}
+  .footer-bottom .footer-social-column .copyright{font-size:7px;letter-spacing:.7px}
+}

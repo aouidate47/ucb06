@@ -122,6 +122,29 @@ export default function Home() {
         <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
 
+      <section className="spotify-section" id="music">
+        <div className="spotify-heading">
+          <SectionLabel>05 / THE SOUND OF THE CURVA</SectionLabel>
+          <div>
+            <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
+            <p>Listen to the music and releases connected to Crazyboys 2006.</p>
+          </div>
+        </div>
+        <div className="spotify-card">
+          <div className="spotify-card-top">
+            <span className="spotify-brand"><Music2 size={20} /> SPOTIFY</span>
+            <span className="spotify-caption">LISTEN · FOLLOW · DISCOVER</span>
+          </div>
+          <iframe
+            src="https://open.spotify.com/embed/artist/1sDw2xw1gleNlPECJOS8dQ?utm_source=generator&theme=0"
+            title="Crazyboys 2006 on Spotify"
+            loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          />
+          <a className="spotify-open" href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer">OPEN ON SPOTIFY <ArrowUpRight size={16} /></a>
+        </div>
+      </section>
+
       <section className="quote-section" id="archive">
         <div className="quote-mark">“</div>
         <p>OUR CITY. OUR CLUB.<br />OUR <span>UNBREAKABLE</span> BOND.</p>

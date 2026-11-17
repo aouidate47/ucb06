@@ -46,7 +46,7 @@ export default function Home() {
           <img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#banner">THE BANNER</a><a href="#away-days">AWAY DAYS</a><a href="#media">PHOTO ARCHIVE</a><a href="#videos">LAST YT VIDEO</a><a href="#music">SOUND</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#away-days">AWAY DAYS</a><a href="#media">PHOTO ARCHIVE</a><a href="#videos">LAST YT VIDEO</a><a href="#music">SOUND</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
@@ -56,7 +56,6 @@ export default function Home() {
             <a href="#culture">OUR ROOTS & TIMELINE</a>
             <a href="#rituals">MATCHDAY</a>
             <a href="#legacy">OUR LEGACY</a>
-            <a href="#banner">THE BANNER</a>
             <a href="#away-days">AWAY DAYS</a>
             <a href="#media">PHOTO ARCHIVE</a>
             <a href="#videos">LAST YT VIDEO</a>
@@ -217,20 +216,6 @@ export default function Home() {
         <p className="legacy-footnote">SIX BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
       </section>
 
-      <section className="banner-story-section" id="banner">
-        <div className="graffiti-spray-layer spray-banner" aria-hidden="true" />
-        <div className="banner-story-heading">
-          <p className="section-kicker">A SYMBOL OF THE CURVA · UCB06</p>
-          <h2>MORE THAN<br /><span>FABRIC.</span></h2>
-          <p className="banner-story-lead">A banner carries a name, a city and the presence of generations. It belongs to the people who raise it, protect it and take it wherever the road leads.</p>
-        </div>
-        <div className="banner-story-typography"><span>ONE NAME · ONE CITY · ONE CURVA</span><strong>UCB<br/>06</strong><span>RAISED BY THE PEOPLE. CARRIED BY GENERATIONS.</span></div>
-        <div className="banner-story-facts">
-          <div><span>MADE BY THE CURVA</span><h3>MORE THAN<br />A NAME.</h3><p>Every letter represents the people who stand behind it, protect it and carry it through every generation.</p></div>
-          <div><span>HOME AND AWAY</span><h3>WHEREVER<br />WE GO.</h3><p>The banner travels with the group — from the Curva Sud to every road that leads to Kawkab.</p></div>
-        </div>
-      </section>
-
       <section className="away-days-section" id="away-days">
         <div className="graffiti-spray-layer spray-away" aria-hidden="true" />
         <div className="away-days-heading">
@@ -239,9 +224,9 @@ export default function Home() {
           <p>Home and away, the journey is part of the story. Every trip adds another memory to the history of the Curva.</p>
         </div>
         <div className="away-days-grid away-days-editorial">
-          <article className="away-day-card away-day-large"><div><span>01 / THE DEPARTURE</span><h3>THE ROAD<br />STARTS HERE.</h3><p>Gathering in Marrakech. Preparing the colours. Moving together.</p></div></article>
-          <article className="away-day-card"><div><span>02 / THE JOURNEY</span><h3>EVERY CITY<br />A MEMORY.</h3><p>Every déplacement becomes part of the group's history.</p></div></article>
-          <article className="away-day-card"><div><span>03 / THE RETURN</span><h3>ALWAYS<br />BACK TO THE CURVA.</h3><p>Different roads. The same colours. The same commitment.</p></div></article>
+          <article className="away-day-card away-day-large"><img className="away-day-image" src="https://mfmsport.ma/wp-content/uploads/2025/03/slider_1646740813KACM-MARRAKECH.jpeg" alt="Kawkab supporters filling the away stand in Fez in March 2025" loading="lazy" /><div><span>01 / THE DEPARTURE</span><h3>THE ROAD<br />STARTS HERE.</h3><p>Gathering in Marrakech. Preparing the colours. Moving together.</p></div></article>
+          <article className="away-day-card"><div><span>02 / THE JOURNEY</span><img className="away-day-image" src="https://www.lesiteinfo.com/wp-content/uploads/2025/09/Kawkab.jpg" alt="Kawkab supporters travelling to Casablanca for the away match against Wydad" loading="lazy" /><h3>EVERY CITY<br />A MEMORY.</h3><p>Every déplacement becomes part of the group's history.</p></div></article>
+          <article className="away-day-card"><div><span>03 / THE RETURN</span><img className="away-day-image" src="https://images2.elbotola.com/article/69a03fe1ea62a1780ddd13d6_default.jpg" alt="Kawkab supporters in the away end in Fez" loading="lazy" /><h3>ALWAYS<br />BACK TO THE CURVA.</h3><p>Different roads. The same colours. The same commitment.</p></div></article>
         </div>
         <a className="text-link away-archive-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE HISTORICAL TRAVEL ARCHIVE <ArrowUpRight size={16} /></a>
       </section>

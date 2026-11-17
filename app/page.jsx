@@ -72,7 +72,6 @@ export default function Home() {
             {covers.slice(0, 3).map((item, index) => (
               <div className="cover-slot" key={item.image}>
                 <img src={item.image} alt={item.alt} loading="lazy" />
-                <span className="cover-index">0{index + 1}</span>
               </div>
             ))}
           </div>
@@ -117,7 +116,6 @@ export default function Home() {
             {covers.slice(3).map((item, index) => (
               <div className="cover-slot" key={item.image}>
                 <img src={item.image} alt={item.alt} loading="lazy" />
-                <span className="cover-index">0{index + 4}</span>
               </div>
             ))}
           </div>

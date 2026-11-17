@@ -37,19 +37,22 @@ export default function Home() {
           <img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">LAST YT VIDEO</a><a href="#contact">FOLLOW</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#banner">THE BANNER</a><a href="#away-days">AWAY DAYS</a><a href="#media">PHOTO ARCHIVE</a><a href="#videos">LAST YT VIDEO</a><a href="#music">SOUND</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
           <summary aria-label="Open navigation menu"><Menu size={23} /></summary>
           <nav className="mobile-nav" aria-label="Mobile navigation">
             <a href="#story">THE STORY</a>
-            <a href="#culture">OUR ROOTS</a>
+            <a href="#culture">OUR ROOTS & TIMELINE</a>
             <a href="#rituals">MATCHDAY</a>
             <a href="#legacy">OUR LEGACY</a>
-            <a href="#media">ARCHIVE</a>
+            <a href="#banner">THE BANNER</a>
+            <a href="#away-days">AWAY DAYS</a>
+            <a href="#media">PHOTO ARCHIVE</a>
             <a href="#videos">LAST YT VIDEO</a>
-            <a href="#contact">FOLLOW</a>
+            <a href="#music">SOUND OF THE CURVA</a>
+            <a href="#contact">FOLLOW UCB06</a>
             <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
           </nav>
         </details>
@@ -205,9 +208,41 @@ export default function Home() {
         <p className="legacy-footnote">SIX BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
       </section>
 
+      <section className="banner-story-section" id="banner">
+        <div className="graffiti-spray-layer spray-banner" aria-hidden="true" />
+        <div className="banner-story-heading">
+          <p className="section-kicker">A SYMBOL OF THE CURVA · UCB06</p>
+          <h2>MORE THAN<br /><span>FABRIC.</span></h2>
+          <p className="banner-story-lead">A banner carries a name, a city and the presence of generations. It belongs to the people who raise it, protect it and take it wherever the road leads.</p>
+        </div>
+        <figure className="banner-feature-photo">
+          <img src="/images/cover3.jpg" alt="Ultras Crazy Boys banner displayed across the Curva Sud" loading="lazy" />
+          <figcaption><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · THE CURVA SUD</span></figcaption>
+        </figure>
+        <div className="banner-story-facts">
+          <div><span>01 / AFRICA</span><h3>THE LONGEST<br />ULTRAS BÂCHE.</h3><p>The group's defining banner and a statement of scale, identity and belonging.</p></div>
+          <div><span>02 / MOROCCO</span><h3>THE AWAY-TRAVEL<br />BÂCHE.</h3><p>A travelling symbol of UCB06, carried on the road in support of Kawkab.</p></div>
+        </div>
+      </section>
+
+      <section className="away-days-section" id="away-days">
+        <div className="graffiti-spray-layer spray-away" aria-hidden="true" />
+        <div className="away-days-heading">
+          <p className="section-kicker">BEYOND MARRAKECH · ALWAYS UCB06</p>
+          <h2>THE ROAD<br /><span>IS OURS.</span></h2>
+          <p>Home and away, the journey is part of the story. Every trip adds another memory to the history of the Curva.</p>
+        </div>
+        <div className="away-days-grid">
+          <article className="away-day-card away-day-large"><img src="/images/cover2.jpg" alt="UCB06 supporters gathered in the stands" loading="lazy" /><div><span>01 / THE JOURNEY</span><h3>FOLLOW THE COLOURS.</h3></div></article>
+          <article className="away-day-card"><img src="/images/cover5.jpeg" alt="Historic UCB06 supporters archive photograph" loading="lazy" /><div><span>02 / THE GENERATIONS</span><h3>ONE CURVA. MANY ROADS.</h3></div></article>
+          <article className="away-day-card"><img src="/images/cover4.png" alt="UCB06 banner carried by supporters" loading="lazy" /><div><span>03 / THE IDENTITY</span><h3>NEVER JUST A TRIP.</h3></div></article>
+        </div>
+        <a className="text-link away-archive-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE HISTORICAL TRAVEL ARCHIVE <ArrowUpRight size={16} /></a>
+      </section>
+
       <section className="media-section" id="media">
         <div className="graffiti-spray-layer spray-archive" aria-hidden="true" />
-        <div className="media-heading"><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
+        <div className="media-heading"><div><h2>THE PHOTO<br /><span>ARCHIVE.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
         <div className="media-grid">
           {archiveImages.map((item, index) => (
             <a className={`media-card media-card-${index + 1}`} href={item.image} target="_blank" rel="noreferrer" aria-label={"Open original photograph: " + item.title} key={item.title}>
@@ -249,7 +284,7 @@ export default function Home() {
           
           <div>
             <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
-            <p>The soundtrack of the curva. Discover the music connected to Crazy Boys 2006.</p>
+            <p>The chants, songs and sounds connected to Crazy Boys 2006. The soundtrack of the Curva.</p>
           </div>
         </div>
         <div className="spotify-card">
@@ -265,13 +300,6 @@ export default function Home() {
           />
           <a className="spotify-open" href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer">OPEN ON SPOTIFY <ArrowUpRight size={16} /></a>
         </div>
-      </section>
-
-      <section className="quote-section" id="archive">
-        <div className="graffiti-spray-layer spray-quote" aria-hidden="true" />
-        <div className="quote-mark">“</div>
-        <p>OUR CITY. OUR CLUB.<br />OUR <span>UNBREAKABLE</span> BOND.</p>
-        <div className="quote-bottom"><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · MOROCCO</span></div>
       </section>
 
       <footer id="contact">

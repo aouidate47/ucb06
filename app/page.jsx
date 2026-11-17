@@ -159,16 +159,24 @@ export default function Home() {
           <p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p>
           <p className="legacy-subtitle">A mark of identity. A symbol carried across generations, stands and roads.</p>
         </div>
-        <figure className="legacy-artifact">
-          <div className="legacy-artifact-image">
-            <img src="/images/cover3.jpg" alt="Historic UCB06 banner displayed across the El Harti stand" loading="lazy" />
-            <span className="legacy-image-stamp">UCB06 / ARCHIVE</span>
+        <div className="legacy-banner-collection" aria-label="Six UCB06 historic banners">
+          <div className="legacy-collection-heading">
+            <span>THE BANNER ARCHIVE</span>
+            <span>06 PIECES · ONE HISTORY</span>
           </div>
-          <figcaption>
-            <span>THE BÂCHE</span>
-            <span>NOT JUST FABRIC. A PROMISE TO THE CURVA.</span>
-          </figcaption>
-        </figure>
+          <div className="legacy-banner-grid">
+            {covers.map((item, index) => (
+              <figure className={"legacy-banner legacy-banner-" + (index + 1)} key={item.image}>
+                <div className="legacy-banner-image">
+                  <img src={item.image} alt={item.alt} loading="lazy" />
+                  <span className="legacy-banner-index">0{index + 1} / 06</span>
+                </div>
+                <figcaption><span>CRAZY BOYS 2006</span><span>ARCHIVE PIECE {String(index + 1).padStart(2, "0")}</span></figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="legacy-collection-note">SIX BANNERS. COUNTLESS MEMORIES. ONE CURVA.</p>
+        </div>
         <div className="legacy-facts">
           <article className="legacy-fact">
             <span className="legacy-number">01 / AFRICA</span>
@@ -183,7 +191,7 @@ export default function Home() {
             <p className="legacy-fact-copy">Every journey carries the same colours. Every kilometre becomes part of the archive.</p>
           </article>
         </div>
-        <p className="legacy-footnote">TWO BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
+        <p className="legacy-footnote">SIX BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
       </section>
 
       <section className="media-section" id="media">

@@ -248,7 +248,7 @@ export default function Home() {
       <footer id="contact">
         <div className="footer-top"><div><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
         <div className="footer-bottom">
-          <a className="brand footer-brand" href="#"><img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" /><span className="brand-name">CRAZYBOYS<span>2006</span></span></a>
+          <a className="brand footer-brand" href="#"><img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" /></a>
           
           <div className="socials">
             <a href="https://youtube.com/@theucb06" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on YouTube"><Youtube size={18} /></a>

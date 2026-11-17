@@ -37,7 +37,7 @@ export default function Home() {
           <img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">UCB06 VIDEO</a><a href="#contact">FOLLOW</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">LAST YT VIDEO</a><a href="#contact">FOLLOW</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
@@ -48,7 +48,7 @@ export default function Home() {
             <a href="#rituals">MATCHDAY</a>
             <a href="#legacy">OUR LEGACY</a>
             <a href="#media">ARCHIVE</a>
-            <a href="#videos">KACM VIDEO</a>
+            <a href="#videos">LAST YT VIDEO</a>
             <a href="#contact">FOLLOW</a>
             <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
           </nav>

@@ -24,6 +24,12 @@ const milestones = [
   { year: "2012", title: "THE ARCHIVE", text: "Old group publications documented trips, scarves, the curva and the life around KACM." },
 ];
 
+const matchdayRituals = [
+  { number: "01", title: "THE GATHERING", tag: "BEFORE KICK-OFF", text: "The city starts to move toward the ground. Familiar faces meet, colours come out and the matchday takes shape." },
+  { number: "02", title: "THE FIRST VOICE", tag: "THE STAND WAKES UP", text: "One voice becomes many. The curva finds its rhythm and the support does not wait for the score." },
+  { number: "03", title: "THE DISPLAY", tag: "COLOUR IN THE AIR", text: "Flags, banners and choreography turn the stand into a statement that can be seen as well as heard." },
+  { number: "04", title: "THE LAST MINUTE", tag: "UNTIL THE END", text: "Whatever happens on the pitch, the commitment is measured across the whole match — not just the result." },
+];
 function SectionLabel({ children }) {
   return <div className="section-label"><span />{children}</div>;
 }
@@ -36,7 +42,7 @@ export default function Home() {
           <img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">UCB06 VIDEO</a><a href="#contact">FOLLOW</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#rituals">MATCHDAY</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">UCB06 VIDEO</a><a href="#contact">FOLLOW</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
@@ -44,6 +50,7 @@ export default function Home() {
           <nav className="mobile-nav" aria-label="Mobile navigation">
             <a href="#story">THE STORY</a>
             <a href="#culture">OUR ROOTS</a>
+            <a href="#rituals">MATCHDAY</a>
             <a href="#legacy">OUR LEGACY</a>
             <a href="#media">ARCHIVE</a>
             <a href="#videos">KACM VIDEO</a>
@@ -113,8 +120,29 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="rituals-section" id="rituals">
+        <div className="rituals-head">
+          <SectionLabel>03 / MATCHDAY CULTURE</SectionLabel>
+          <div className="rituals-title">
+            <p className="rituals-overline">NOT JUST 90 MINUTES.</p>
+            <h2>THIS IS HOW<br /><span>WE LIVE IT.</span></h2>
+          </div>
+          <p className="rituals-intro">A matchday is built from moments. The walk, the voices, the colours and the loyalty that stays after the final whistle.</p>
+        </div>
+        <div className="rituals-grid">
+          {matchdayRituals.map((item, index) => (
+            <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
+              <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
+              <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
+              <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
+              <span className="ritual-card-line" />
+            </article>
+          ))}
+        </div>
+        <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
+      </section>
       <section className="legacy-section" id="legacy">
-        <div className="legacy-topline"><SectionLabel>03 / OUR LEGACY</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
+        <div className="legacy-topline"><SectionLabel>04 / OUR LEGACY</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
         <div className="legacy-title"><p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p></div>
         <div className="legacy-grid">
           <article className="legacy-card legacy-card-africa">
@@ -134,10 +162,10 @@ export default function Home() {
       </section>
 
       <section className="media-section" id="media">
-        <div className="media-heading"><SectionLabel>04 / THE PHOTO ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
+        <div className="media-heading"><SectionLabel>05 / THE PHOTO ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
         <div className="media-grid">
           {archiveImages.map((item, index) => (
-            <a className={`media-card media-card-${index + 1}`} href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer" key={item.title}>
+            <a className={`media-card media-card-${index + 1}`} href={item.image} target="_blank" rel="noreferrer" aria-label={"Open original photograph: " + item.title} key={item.title}>
               <div className="media-photo" style={{ backgroundImage: `url("${item.image}")` }} />
               <span className="media-count">0{index + 1} / 04</span>
               <div className="media-card-info"><span>{item.category}</span><h3>{item.title}</h3><ArrowUpRight size={20} /></div>
@@ -149,7 +177,7 @@ export default function Home() {
 
       <section className="youtube-section" id="videos">
         <div className="youtube-heading">
-          <SectionLabel>05 / THE ULTRAS CHANNEL</SectionLabel>
+          <SectionLabel>06 / THE ULTRAS CHANNEL</SectionLabel>
           <div>
             <h2>THE LATEST<br /><span>FROM UCB06.</span></h2>
             <p>Matchday footage, away days and the sound of the stands. Straight from the UCB06 channel.</p>
@@ -171,7 +199,7 @@ export default function Home() {
 
       <section className="spotify-section" id="music">
         <div className="spotify-heading">
-          <SectionLabel>06 / THE SOUND OF THE CURVA</SectionLabel>
+          <SectionLabel>07 / THE SOUND OF THE CURVA</SectionLabel>
           <div>
             <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
             <p>The soundtrack of the curva. Discover the music connected to Crazy Boys 2006.</p>

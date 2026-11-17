@@ -1005,3 +1005,10 @@ main > footer::before{
   pointer-events:none;
   background:linear-gradient(180deg,var(--blend-from) 0%,color-mix(in srgb,var(--blend-from) 48%,transparent) 42%,transparent 100%);
 }
+
+
+/* Keep the blend behind section content while above each section background. */
+main > section:not(.hero),
+main > footer{isolation:isolate}
+main > section:not(.hero)::before,
+main > footer::before{z-index:-1}

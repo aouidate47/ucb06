@@ -13,8 +13,8 @@ const covers = [
   { image: "/images/cover2.jpg", alt: "UCB06 ultras in the curva beneath the group's banner" },
   { image: "/images/cover3.jpg", alt: "Ultras Crazy Boys 2006 banner across the El Harti stand" },
   { image: "/images/cover4.png", alt: "Born to Win banner held by UCB06 members at sunset" },
-  { image: archiveImages[0].image, alt: "Historic UCB06 archive photograph from the curva" },
-  { image: archiveImages[1].image, alt: "UCB06 archive photograph of the Curva Sud" },
+  { image: "/images/cover5.jpeg", alt: "Historic UCB06 archive photograph from the curva" },
+  { image: "/images/cover6.jpg", alt: "UCB06 archive photograph of the Curva Sud" },
 ];
 
 const milestones = [
@@ -76,18 +76,43 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="manifesto-copy">
-            <p>Ultras Crazy Boys was born in the stands of Marrakech on a winter night in 2006, 
-              when a handful of young supporters decided that following Kawkab was not a pastime but a duty.
-               From the very first matchday the group took its place behind the goal, 
-               turning the Virage Sud at Stade El Harti into a home of flags, 
-               songs and color.</p>
-            <p>Two decades later the name still means one thing: presence.
-               Home or away, in the noise of a derby or the silence of a long season, 
-               UCB06 stands with the club, protects its colors and passes the culture of the curva from one generation to the next.
-                The banners grew bigger and the faces changed, but the loyalty never did.</p>
-            <a className="text-link" href="https://ucb2006.wordpress.com/2012/03/23/historique-du-groupe-ultras-crazy-boys/" target="_blank" rel="noreferrer">READ THE ORIGINAL HISTORY <ArrowUpRight size={16} /></a>
-          </div>
+          
+<div className="manifesto-copy">
+  <p>
+    Born on December 25, 2006, in the stands of Marrakech, Ultras Crazy Boys
+    emerged when a generation of young supporters decided that following
+    Kawkab Athletic Club was more than a passion — it was a commitment.
+    As the first ultras group representing Kawkab, Crazy Boys established
+    its identity behind the goal, in the Curva Sud of Stade El Harti,
+    transforming the terraces into a home of flags, chants, banners and
+    collective expression. What started with a handful of supporters
+    became part of the history of the club and the ultras culture of
+    Marrakech.
+  </p>
+
+  <p>
+    From the first choreographies to the long journeys across Morocco,
+    every match became another chapter in the group's story. Through
+    victories, difficult seasons and generations of change, Crazy Boys
+    continued to carry the colors of Kawkab beyond the limits of the
+    stadium. The banners grew larger, the voices multiplied and the
+    faces changed, but the identity remained. Twenty years later,
+    UCB06 represents a legacy built on presence, sacrifice, solidarity
+    and unconditional attachment to the club. Home or away, in the
+    atmosphere of a derby or the silence of a difficult season, the
+    Curva remains our home and Kawkab remains our reason.
+  </p>
+
+  <a
+    className="text-link"
+    href="https://ucb2006.wordpress.com/2012/03/23/historique-du-groupe-ultras-crazy-boys/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    READ THE ORIGINAL HISTORY <ArrowUpRight size={16} />
+  </a>
+</div>
+
           <div className="cover-stack cover-stack-right">
             {covers.slice(3).map((item, index) => (
               <div className="cover-slot" key={item.image}>
@@ -125,14 +150,10 @@ export default function Home() {
           <p className="rituals-intro">A matchday is built from moments. The walk, the voices, the colours and the loyalty that stays after the final whistle.</p>
         </div>
         <div className="stadium-bowl matchday-video">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/kiPq4b_UsO4?rel=0"
-            title="UCB06 matchday video"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
+          <video controls playsInline preload="metadata" aria-label="UCB06 matchday video">
+            <source src="/videos/how-we-live-it-3min.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
         </div>
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>

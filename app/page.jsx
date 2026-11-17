@@ -120,7 +120,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="manifesto-stamp">UCB<br /><small>06</small></div>
+        <img className="manifesto-stamp" src="/images/ucb06-graffiti.svg" alt="UCB06 in red graffiti spray-paint lettering" />
       </section>
 
       <section className="culture" id="culture">

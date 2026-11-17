@@ -104,7 +104,6 @@ export default function Home() {
         </div>
         <div className="manifesto-stamp">UCB<br /><small>06</small></div>
       </section>
-      <div className="section-blend blend-ink-culture" aria-hidden="true" />
 
       <section className="culture" id="culture">
         <div className="culture-heading"><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
@@ -120,7 +119,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <div className="section-blend blend-culture-red" aria-hidden="true" />
 
       <section className="rituals-section" id="rituals">
         <div className="rituals-head">
@@ -152,7 +150,6 @@ export default function Home() {
         </div>
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>
-      <div className="section-blend blend-red-gold" aria-hidden="true" />
       <section className="legacy-section" id="legacy">
         <div className="legacy-topline">
           <span>CRAZY BOYS 2006 · MARRAKECH</span>
@@ -196,7 +193,6 @@ export default function Home() {
         </div>
         <p className="legacy-footnote">SIX BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
       </section>
-      <div className="section-blend blend-gold-paper" aria-hidden="true" />
 
       <section className="media-section" id="media">
         <div className="media-heading"><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
@@ -211,7 +207,6 @@ export default function Home() {
         </div>
         <div className="archive-link-wrap"><a className="text-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE ORIGINAL UCB06 ARCHIVE <ArrowUpRight size={16} /></a></div>
       </section>
-      <div className="section-blend blend-paper-dark" aria-hidden="true" />
 
       <section className="youtube-section" id="videos">
         <div className="youtube-heading">
@@ -234,7 +229,6 @@ export default function Home() {
         </a>
         <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW OFFICIAL CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
-      <div className="section-blend blend-dark-paper" aria-hidden="true" />
 
       <section className="spotify-section" id="music">
         <div className="spotify-heading">
@@ -258,14 +252,12 @@ export default function Home() {
           <a className="spotify-open" href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer">OPEN ON SPOTIFY <ArrowUpRight size={16} /></a>
         </div>
       </section>
-      <div className="section-blend blend-paper-red" aria-hidden="true" />
 
       <section className="quote-section" id="archive">
         <div className="quote-mark">“</div>
         <p>OUR CITY. OUR CLUB.<br />OUR <span>UNBREAKABLE</span> BOND.</p>
         <div className="quote-bottom"><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · MOROCCO</span></div>
       </section>
-      <div className="section-blend blend-red-dark" aria-hidden="true" />
 
       <footer id="contact">
         <div className="footer-top"><div><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>

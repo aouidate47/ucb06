@@ -203,3 +203,24 @@ footer{padding:75px 7vw 25px}
 .spotify-open svg{color:#b9f5c8}
 @media(max-width:800px){.spotify-section{padding:75px 7vw 85px}.spotify-heading{display:block;margin-bottom:36px}.spotify-heading>div{margin-top:42px}.spotify-heading h2{font-size:clamp(65px,14vw,95px)}.spotify-card{padding:14px}.spotify-card iframe{height:352px}}
 @media(max-width:430px){.spotify-card{padding:10px}.spotify-card iframe{height:352px}.spotify-caption{font-size:8px}}
+
+/* UCB06 video feature — vintage ultras poster treatment */
+.youtube-section{background:#171513;color:var(--paper);padding:112px 8vw 96px;position:relative;isolation:isolate;overflow:hidden;border-top:9px solid var(--red);border-bottom:1px solid #eee6d533}
+.youtube-section:before{content:'UCB06';position:absolute;z-index:-1;right:-2vw;top:10px;font:clamp(180px,32vw,440px)/.8 'Anton',Impact,sans-serif;color:#eee6d509;letter-spacing:-.04em;pointer-events:none}
+.youtube-section:after{content:'';position:absolute;z-index:-1;inset:0;opacity:.13;pointer-events:none;background-image:radial-gradient(#eee6d5 .6px,transparent .6px);background-size:5px 5px}
+.youtube-heading{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:42px;position:relative}
+.youtube-heading .section-label{color:#c8bdad;margin-top:10px}
+.youtube-heading h2{font:clamp(72px,9vw,124px)/.82 'Anton',Impact,sans-serif;letter-spacing:-.025em;margin:0;text-transform:uppercase;text-shadow:3px 3px 0 #000}
+.youtube-heading h2 span{color:var(--red);text-shadow:2px 2px 0 #eee6d51c}
+.youtube-heading p{font-size:12px;line-height:1.8;color:#bcb2a3;margin-top:22px;font-style:italic;max-width:420px}
+.youtube-frame{display:block;position:relative;width:min(100%,1040px);aspect-ratio:16/9;margin:0 auto;border:7px solid var(--paper);outline:1px solid var(--ink);border-radius:2px;overflow:hidden;background:#090909;box-shadow:9px 9px 0 var(--red),15px 15px 0 #000;transform:rotate(-.35deg)}
+.youtube-frame iframe{width:100%;height:100%;border:0;display:block}
+.youtube-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:14px;background:linear-gradient(0deg,#0009,transparent 58%);color:#fff;pointer-events:none;opacity:0;transition:opacity .2s}
+.youtube-overlay b{font:500 11px 'DM Mono',monospace;letter-spacing:1.4px}
+.youtube-frame:hover .youtube-overlay{opacity:1}
+.youtube-overlay svg:first-child{color:#ed1f2b}
+.youtube-bottom{width:min(100%,1040px);margin:28px auto 0;display:flex;align-items:center;justify-content:space-between;gap:15px;position:relative;font:10px 'DM Mono',monospace;letter-spacing:1.2px;color:#bcb2a3}
+.youtube-bottom a{display:flex;align-items:center;gap:9px;color:var(--paper);border-bottom:2px solid var(--red);padding-bottom:9px}
+.youtube-bottom a svg{color:var(--red)}
+@media(max-width:800px){.youtube-section{padding:82px 7vw 76px}.youtube-heading{display:block;margin-bottom:38px}.youtube-heading>div{margin-top:42px}.youtube-heading h2{font-size:clamp(70px,15vw,100px)}.youtube-frame{border-width:5px;box-shadow:6px 6px 0 var(--red);transform:none}.youtube-bottom{font-size:8px;letter-spacing:.7px;margin-top:22px}}
+@media(max-width:430px){.youtube-frame{aspect-ratio:16/10}.youtube-bottom{align-items:flex-start;flex-direction:column}.youtube-heading p{font-size:11px}}

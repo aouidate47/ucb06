@@ -129,15 +129,34 @@ export default function Home() {
           </div>
           <p className="rituals-intro">A matchday is built from moments. The walk, the voices, the colours and the loyalty that stays after the final whistle.</p>
         </div>
-        <div className="rituals-grid">
-          {matchdayRituals.map((item, index) => (
-            <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
-              <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
-              <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
-              <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
-              <span className="ritual-card-line" />
-            </article>
-          ))}
+        <div className="stadium-bowl">
+          <div className="stadium-stands" aria-hidden="true"><span>UCB06 · VIRAGE SUD · MARRAKECH</span><span>HOME OF THE CURVA</span></div>
+          <div className="stadium-pitch">
+            <div className="pitch-markings" aria-hidden="true">
+              <span className="pitch-halfway" />
+              <span className="pitch-center-circle" />
+              <span className="pitch-center-spot" />
+              <span className="pitch-box pitch-box-left" />
+              <span className="pitch-box pitch-box-right" />
+              <span className="pitch-goal pitch-goal-left" />
+              <span className="pitch-goal pitch-goal-right" />
+              <span className="pitch-corner pitch-corner-one" />
+              <span className="pitch-corner pitch-corner-two" />
+              <span className="pitch-corner pitch-corner-three" />
+              <span className="pitch-corner pitch-corner-four" />
+            </div>
+            <div className="rituals-grid">
+              {matchdayRituals.map((item, index) => (
+                <article className={"ritual-card ritual-card-" + (index + 1)} key={item.number}>
+                  <div className="ritual-card-top"><span>{item.number}</span><span>{item.tag}</span></div>
+                  <div className="ritual-graphic" aria-hidden="true"><span>{item.number}</span></div>
+                  <div className="ritual-card-copy"><h3>{item.title}</h3><p>{item.text}</p></div>
+                  <span className="ritual-card-line" />
+                </article>
+              ))}
+            </div>
+          </div>
+          <div className="stadium-stands stadium-stands-bottom" aria-hidden="true"><span>ALWAYS BEHIND THE TEAM</span><span>UCB06 / 2006</span></div>
         </div>
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>

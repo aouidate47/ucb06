@@ -224,3 +224,27 @@ footer{padding:75px 7vw 25px}
 .youtube-bottom a svg{color:var(--red)}
 @media(max-width:800px){.youtube-section{padding:82px 7vw 76px}.youtube-heading{display:block;margin-bottom:38px}.youtube-heading>div{margin-top:42px}.youtube-heading h2{font-size:clamp(70px,15vw,100px)}.youtube-frame{border-width:5px;box-shadow:6px 6px 0 var(--red);transform:none}.youtube-bottom{font-size:8px;letter-spacing:.7px;margin-top:22px}}
 @media(max-width:430px){.youtube-frame{aspect-ratio:16/10}.youtube-bottom{align-items:flex-start;flex-direction:column}.youtube-heading p{font-size:11px}}
+
+
+/* UCB06 legacy banner feature */
+.legacy-section{background:var(--paper);color:var(--ink);padding:104px 8vw 92px;position:relative;overflow:hidden;border-top:9px solid var(--red);border-bottom:1px solid var(--line)}
+.legacy-topline{display:flex;justify-content:space-between;align-items:center;position:relative}
+.legacy-topline>span,.legacy-caption,.legacy-kicker,.legacy-footnote{font:10px 'DM Mono',monospace;letter-spacing:1.2px}
+.legacy-topline>span{color:var(--red)}
+.legacy-title{margin:65px 0 42px;position:relative}
+.legacy-title p{font:clamp(48px,7vw,94px)/.88 'Anton',Impact,sans-serif;letter-spacing:-.025em;margin:0}
+.legacy-title p span{color:var(--red);text-shadow:2px 2px 0 var(--ink)}
+.legacy-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative}
+.legacy-card{min-height:365px;padding:32px 34px 28px;position:relative;overflow:hidden;background:var(--red);color:#fff;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.legacy-card:after{content:'UCB06';position:absolute;right:-8px;bottom:-38px;font:clamp(90px,15vw,190px)/.8 'Anton',Impact,sans-serif;color:#17151318;pointer-events:none}
+.legacy-card-morocco{background:var(--ink);color:var(--paper);transform:translateY(28px)}
+.legacy-number{position:absolute;right:25px;top:22px;font:12px 'DM Mono',monospace;letter-spacing:1px}
+.legacy-kicker{margin:0 0 42px;text-transform:uppercase;color:#ffe2df}
+.legacy-card-morocco .legacy-kicker{color:#c8bdad}
+.legacy-card h3{position:relative;z-index:1;font:clamp(39px,5.1vw,70px)/.9 'Anton',Impact,sans-serif;margin:0;letter-spacing:-.02em}
+.legacy-card h3 em{font-style:normal;color:var(--ink)}
+.legacy-card-morocco h3 em{color:var(--red)}
+.legacy-caption{position:absolute;left:34px;bottom:27px;z-index:1}
+.legacy-footnote{margin:68px 0 0;text-align:right;color:var(--red);position:relative}
+@media(max-width:800px){.legacy-section{padding:78px 7vw 76px}.legacy-topline{align-items:flex-start;gap:18px;flex-direction:column}.legacy-title{margin:48px 0 34px}.legacy-grid{grid-template-columns:1fr;gap:18px}.legacy-card{min-height:310px;padding:27px 25px}.legacy-card-morocco{transform:none}.legacy-kicker{margin-bottom:36px}.legacy-caption{left:25px;bottom:23px}.legacy-footnote{margin-top:48px;font-size:8px}}
+@media(max-width:430px){.legacy-card{min-height:285px}.legacy-card h3{font-size:clamp(38px,11vw,52px)}.legacy-title p{font-size:clamp(44px,12vw,62px)}}

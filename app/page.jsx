@@ -1,15 +1,17 @@
-import { ArrowDown, ArrowUpRight, Instagram, Youtube, Music2, Menu } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Instagram, Youtube, Music2, Menu, Facebook } from "lucide-react";
 
-const stories = [
-  { number: "01", title: "THE BEGINNING", subtitle: "Une histoire qui ne s'arrête pas", type: "HISTORY", year: "2006" },
-  { number: "02", title: "OUR CULTURE", subtitle: "More than a stand. A way of life.", type: "IDENTITY", year: "FOREVER" },
-  { number: "03", title: "THE ARCHIVE", subtitle: "Every image carries a memory.", type: "MEMORIES", year: "2006—NOW" },
+const archiveImages = [
+  { title: "CURVA MITICA", category: "THE STAND / ARCHIVE", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/kacm1.jpg" },
+  { title: "THE CURVA SUD", category: "EL HARTI / ARCHIVE", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/420809_254514171291500_102388293170756_541027_1778229756_n.jpg" },
+  { title: "CB06 IDENTITY", category: "GROUP / ARCHIVE", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/901513856qi3.jpg" },
+  { title: "THE SCARF", category: "GROUP MATERIAL / 2012", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/378277_273217379421179_102388293170756_585530_881783711_n.jpg" },
 ];
 
-const media = [
-  { title: "THE CURVA", category: "MATCHDAY / 2025", image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1100&q=85" },
-  { title: "ONE VOICE", category: "SUPPORT / 2024", image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=80" },
-  { title: "OUR COLORS", category: "IDENTITY / 2023", image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=900&q=85" },
+const milestones = [
+  { year: "25.12.2006", title: "THE BEGINNING", text: "Ultras Crazy Boys is founded in Marrakech to stand behind Kawkab Athletic Club, home and away." },
+  { year: "THE CURVA SUD", title: "EL HARTI", text: "The group's historic place in the stands was the Virage Sud at Stade El Harti." },
+  { year: "THE YEARS", title: "TIFOS & ANIMATIONS", text: "Flags, large-scale displays and the visual language of the stands became part of the group's story." },
+  { year: "2012", title: "THE ARCHIVE", text: "Old group publications documented trips, scarves, the curva and the life around KACM." },
 ];
 
 function SectionLabel({ children }) {
@@ -21,13 +23,13 @@ export default function Home() {
     <main>
       <header className="topbar">
         <a className="brand" href="#" aria-label="Crazyboys 2006 home">
-          <span className="brand-mark">CB</span>
+          <img className="brand-logo" src="https://ucb2006.wordpress.com/wp-content/uploads/2012/03/cropped-180017_112936392115946_102388293170756_94706_1772312_n12.jpg" alt="Crazyboys 2006 emblem" />
           <span className="brand-name">CRAZYBOYS<span>2006</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">CULTURE</a><a href="#media">MEDIA</a><a href="#archive">ARCHIVE</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#media">ARCHIVE</a><a href="#contact">FOLLOW</a>
         </nav>
-        <a className="header-cta" href="#contact">GET IN TOUCH <ArrowUpRight size={14} /></a>
+        <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <button className="menu-button" aria-label="Open menu"><Menu size={22} /></button>
       </header>
 
@@ -35,70 +37,75 @@ export default function Home() {
         <div className="hero-image" />
         <div className="hero-grain" />
         <div className="hero-content">
-          <p className="eyebrow"><span className="live-dot" /> EST. MMVI <i /> ONE PASSION. ONE FAMILY.</p>
-          <h1>NO<br /><em>LIMITS.</em></h1>
+          <p className="eyebrow"><span className="live-dot" /> MARRAKECH · EST. 2006 <i /> KACM</p>
+          <h1>ULTRAS<br /><em>CRAZY.</em></h1>
           <div className="hero-bottom">
-            <p className="hero-description">WE ARE THE VOICE.<br />WE ARE THE COLORS.<br /><strong>WE ARE CRAZYBOYS.</strong></p>
-            <a className="scroll-link" href="#story"><span>SCROLL TO EXPLORE</span><ArrowDown size={17} /></a>
+            <p className="hero-description">ONE CITY.<br />ONE CLUB.<br /><strong>ONE UNCONDITIONAL PASSION.</strong></p>
+            <a className="scroll-link" href="#story"><span>DISCOVER OUR STORY</span><ArrowDown size={17} /></a>
           </div>
         </div>
-        <div className="hero-index">UCB06 <span>—</span> 01 / 04</div>
-        <div className="hero-side">LA JEUNESSE EST UNE FORCE</div>
+        <div className="hero-index">UCB06 <span>—</span> MARRAKECH / MOROCCO</div>
+        <div className="hero-side">KAWKAB ATHLETIC CLUB DE MARRAKECH</div>
       </section>
 
       <section className="manifesto" id="story">
-        <div className="manifesto-top"><SectionLabel>01 / WHO WE ARE</SectionLabel><span>منذ 2006 — إلى الأبد</span></div>
+        <div className="manifesto-top"><SectionLabel>01 / WHO WE ARE</SectionLabel><span>منذ 2006 — ديما كوكب</span></div>
         <div className="manifesto-grid">
-          <h2>NOT JUST<br />A <span>GROUP.</span><br />A WAY OF LIFE.</h2>
+          <h2>BUILT ON<br /><span>LOYALTY.</span><br />BOUND BY COLORS.</h2>
           <div className="manifesto-copy">
-            <p className="big-copy">Since 2006, one thing has never changed: <span>our devotion.</span></p>
-            <p>Built on loyalty, brotherhood and an unconditional love for our colors. Crazyboys 2006 is a story written together, carried from generation to generation, inside and beyond the stands.</p>
-            <a className="text-link" href="#culture">DISCOVER OUR STORY <ArrowUpRight size={16} /></a>
+            <p className="big-copy">25 December 2006. <span>A story begins in Marrakech.</span></p>
+            <p>Ultras Crazy Boys (UCB) was founded to support Kawkab Athletic Club of Marrakech, at home and away. More than a matchday presence, the group built its identity around loyalty, collective commitment and the culture of the curva.</p>
+            <a className="text-link" href="https://ucb2006.wordpress.com/2012/03/23/historique-du-groupe-ultras-crazy-boys/" target="_blank" rel="noreferrer">READ THE ORIGINAL HISTORY <ArrowUpRight size={16} /></a>
           </div>
         </div>
-        <div className="manifesto-stamp">CB<br /><small>06</small></div>
+        <div className="manifesto-stamp">UCB<br /><small>06</small></div>
       </section>
 
       <section className="culture" id="culture">
-        <div className="culture-heading"><SectionLabel>02 / OUR DNA</SectionLabel><p>THE VALUES THAT<br /><span>DEFINE US.</span></p></div>
+        <div className="culture-heading"><SectionLabel>02 / OUR HISTORY</SectionLabel><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
         <div className="story-list">
-          {stories.map((story) => (
-            <a className="story-row" href="#archive" key={story.number}>
-              <span className="story-number">{story.number}</span>
-              <div className="story-title"><h3>{story.title}</h3><p>{story.subtitle}</p></div>
-              <span className="story-type">{story.type}</span>
-              <span className="story-year">{story.year}</span>
+          {milestones.map((item, index) => (
+            <article className="story-row" key={item.year}>
+              <span className="story-number">0{index + 1}</span>
+              <div className="story-title"><h3>{item.title}</h3><p>{item.text}</p></div>
+              <span className="story-type">{item.year}</span>
+              <span className="story-year">UCB06</span>
               <span className="story-arrow"><ArrowUpRight size={22} /></span>
-            </a>
+            </article>
           ))}
         </div>
       </section>
 
       <section className="media-section" id="media">
-        <div className="media-heading"><SectionLabel>03 / IN FRAMES</SectionLabel><div><h2>MEMORIES<br /><span>NEVER FADE.</span></h2><p>A living archive of our passion.</p></div></div>
+        <div className="media-heading"><SectionLabel>03 / THE ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>Historical photographs and material from the group's public archive.</p></div></div>
         <div className="media-grid">
-          {media.map((item, index) => (
-            <a className={`media-card media-card-${index + 1}`} href="#archive" key={item.title}>
+          {archiveImages.slice(0, 3).map((item, index) => (
+            <a className={`media-card media-card-${index + 1}`} href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer" key={item.title}>
               <div className="media-photo" style={{ backgroundImage: `url("${item.image}")` }} />
               <span className="media-count">0{index + 1} / 03</span>
               <div className="media-card-info"><span>{item.category}</span><h3>{item.title}</h3><ArrowUpRight size={20} /></div>
             </a>
           ))}
         </div>
+        <div className="archive-link-wrap"><a className="text-link" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">EXPLORE THE ORIGINAL UCB06 ARCHIVE <ArrowUpRight size={16} /></a></div>
       </section>
 
       <section className="quote-section" id="archive">
         <div className="quote-mark">“</div>
-        <p>THE STANDS ARE OUR HOME.<br />THE COLORS ARE <span>OUR STORY.</span></p>
-        <div className="quote-bottom"><span>CRAZYBOYS 2006</span><span>LA PASSION N'A PAS DE FIN.</span></div>
+        <p>OUR CITY. OUR CLUB.<br />OUR <span>UNBREAKABLE</span> BOND.</p>
+        <div className="quote-bottom"><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · MOROCCO</span></div>
       </section>
 
       <footer id="contact">
-        <div className="footer-top"><div><span className="footer-kicker">THE STORY CONTINUES</span><h2>ALWAYS<br /><span>UNITED.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
+        <div className="footer-top"><div><span className="footer-kicker">THE CURVA IS OUR HOME</span><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
         <div className="footer-bottom">
-          <a className="brand footer-brand" href="#"><span className="brand-mark">CB</span><span className="brand-name">CRAZYBOYS<span>2006</span></span></a>
-          <p>ONE PASSION. ONE FAMILY. SINCE 2006.</p>
-          <div className="socials"><a href="#" aria-label="Instagram"><Instagram size={18} /></a><a href="#" aria-label="YouTube"><Youtube size={18} /></a><a href="#" aria-label="Music"><Music2 size={18} /></a></div>
+          <a className="brand footer-brand" href="#"><img className="brand-logo" src="https://ucb2006.wordpress.com/wp-content/uploads/2012/03/cropped-180017_112936392115946_102388293170756_94706_1772312_n12.jpg" alt="Crazyboys 2006 emblem" /><span className="brand-name">CRAZYBOYS<span>2006</span></span></a>
+          <p>ONE CITY. ONE CLUB. SINCE 2006.</p>
+          <div className="socials">
+            <a href="https://www.youtube.com/channel/UCIg_0PYU1QwSZ_tXrC_OjQA/featured" target="_blank" rel="noreferrer" aria-label="YouTube archive"><Youtube size={18} /></a>
+            <a href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer" aria-label="Crazy Boys 2006 on Spotify"><Music2 size={18} /></a>
+            <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer" aria-label="Historical website"><ArrowUpRight size={18} /></a>
+          </div>
           <span className="copyright">© UCB06 — ALL RIGHTS RESERVED</span>
         </div>
       </footer>

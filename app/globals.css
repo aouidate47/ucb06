@@ -819,3 +819,93 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
  .stadium-pitch-overlay .ritual-card-copy p{font-size:8px!important;line-height:1.4}
  .stadium-pitch-overlay .ritual-card-line{margin-top:8px!important;height:3px!important}
 }
+
+
+/* Gold heritage treatment — the banner is presented as an archival artefact */
+.legacy-section{
+  --heritage-gold:#c5a45e;
+  --heritage-light:#ead9a9;
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(86px,10vw,150px) 8vw 100px;
+  color:#17130d;
+  background:
+    radial-gradient(ellipse at 50% 34%,#f0dfad 0%,#d5b56f 42%,#b28d45 100%);
+  border:0;
+}
+.legacy-section:before{
+  content:"ARCHIVE / 2006—NOW";position:absolute;z-index:-1;right:-1vw;top:24px;
+  color:#17130d0c;font:clamp(70px,13vw,180px)/.8 'Anton',Impact,sans-serif;
+  white-space:nowrap;pointer-events:none
+}
+.legacy-section:after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;
+  background-image:repeating-linear-gradient(0deg,#fff3 0 1px,transparent 1px 5px),repeating-linear-gradient(90deg,#5a421b12 0 1px,transparent 1px 7px);
+  mix-blend-mode:multiply
+}
+.legacy-topline{border-bottom:1px solid #17130d66;padding-bottom:16px}
+.legacy-topline>span{color:#4c3514}
+.legacy-title{margin:clamp(52px,7vw,96px) 0 44px}
+.legacy-title p{color:#17130d;font-size:clamp(58px,9vw,126px);line-height:.79}
+.legacy-title p span{color:#8d1d20;text-shadow:2px 2px 0 #f0dfad}
+.legacy-title .legacy-subtitle{
+  max-width:530px;margin:26px 0 0 auto;
+  color:#44351f;font:italic 13px/1.8 'Libre Baskerville',serif;
+  letter-spacing:0
+}
+.legacy-artifact{
+  position:relative;margin:0 0 70px;padding:12px;
+  background:linear-gradient(135deg,#f4e6c4,#a98748 48%,#ead7a5);
+  border:1px solid #5b431e;
+  box-shadow:0 2px 0 #fff8 inset,0 18px 38px #35240d55,0 8px 0 #4a3517;
+}
+.legacy-artifact-image{height:clamp(220px,42vw,560px);position:relative;overflow:hidden;background:#171513}
+.legacy-artifact-image:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,#08070666,transparent 48%),linear-gradient(90deg,#08070622,transparent 25%,transparent 75%,#08070622);
+  pointer-events:none
+}
+.legacy-artifact-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:contrast(1.08) saturate(.82)}
+.legacy-image-stamp{
+  position:absolute;z-index:1;right:18px;bottom:16px;padding:9px 12px;
+  color:#f2dfb0;border:1px solid #f2dfb088;background:#17130dcc;
+  font:9px 'DM Mono',monospace;letter-spacing:2px
+}
+.legacy-artifact figcaption{
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+  padding:16px 8px 5px;color:#302313;font:9px 'DM Mono',monospace;letter-spacing:1.5px
+}
+.legacy-artifact figcaption span:first-child{font-weight:700;color:#8d1d20}
+.legacy-facts{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border-top:1px solid #17130d88;border-bottom:1px solid #17130d88
+}
+.legacy-fact{position:relative;min-height:330px;padding:32px 38px 34px}
+.legacy-fact:first-child{border-right:1px solid #17130d88}
+.legacy-number{display:block;position:static;margin-bottom:35px;color:#6d4d1b;font:10px 'DM Mono',monospace;letter-spacing:1.8px}
+.legacy-fact .legacy-kicker{margin:0 0 20px;color:#7f1c1f;font:10px 'DM Mono',monospace;letter-spacing:1.4px}
+.legacy-fact h3{position:relative;z-index:1;margin:0;color:#17130d;font:clamp(37px,5vw,68px)/.86 'Anton',Impact,sans-serif;letter-spacing:-.02em}
+.legacy-fact h3 em{color:#8d1d20;font-style:normal}
+.legacy-fact-copy{max-width:390px;margin:22px 0 0;color:#4d3b21;font:11px/1.8 'DM Mono',monospace}
+.legacy-footnote{margin:30px 0 0;color:#7f1c1f;text-align:right;font-weight:700;letter-spacing:2px}
+@media(max-width:800px){
+  .legacy-section{padding:82px 7vw 76px}
+  .legacy-title{margin:54px 0 34px}
+  .legacy-title p{font-size:clamp(52px,11vw,86px)}
+  .legacy-title .legacy-subtitle{margin:22px 0 0;max-width:420px}
+  .legacy-artifact{padding:7px;margin-bottom:46px;box-shadow:0 10px 24px #35240d55,0 5px 0 #4a3517}
+  .legacy-artifact-image{height:clamp(190px,48vw,360px)}
+  .legacy-artifact figcaption{font-size:7px;letter-spacing:.8px}
+  .legacy-facts{grid-template-columns:1fr}
+  .legacy-fact{min-height:0;padding:27px 8px 30px}
+  .legacy-fact:first-child{border-right:0;border-bottom:1px solid #17130d88}
+  .legacy-number{margin-bottom:25px}
+  .legacy-fact h3{font-size:clamp(44px,10vw,68px)}
+  .legacy-fact-copy{font-size:10px}
+  .legacy-footnote{font-size:8px}
+}
+@media(max-width:430px){
+  .legacy-title p{font-size:clamp(43px,11.5vw,58px)}
+  .legacy-artifact-image{height:210px}
+  .legacy-artifact figcaption{align-items:flex-start;flex-direction:column;gap:7px}
+  .legacy-fact h3{font-size:clamp(40px,11vw,54px)}
+}

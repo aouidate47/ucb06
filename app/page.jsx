@@ -27,7 +27,7 @@ export default function Home() {
           <span className="brand-name">CRAZYBOYS<span>2006</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#media">ARCHIVE</a><a href="#videos">KACM VIDEO</a><a href="#contact">FOLLOW</a>
+          <a href="#story">THE STORY</a><a href="#culture">OUR ROOTS</a><a href="#legacy">OUR LEGACY</a><a href="#media">ARCHIVE</a><a href="#videos">UCB06 VIDEO</a><a href="#contact">FOLLOW</a>
         </nav>
         <a className="header-cta" href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer">OLD ARCHIVE <ArrowUpRight size={14} /></a>
         <details className="mobile-menu">
@@ -35,6 +35,7 @@ export default function Home() {
           <nav className="mobile-nav" aria-label="Mobile navigation">
             <a href="#story">THE STORY</a>
             <a href="#culture">OUR ROOTS</a>
+            <a href="#legacy">OUR LEGACY</a>
             <a href="#media">ARCHIVE</a>
             <a href="#videos">KACM VIDEO</a>
             <a href="#contact">FOLLOW</a>
@@ -86,6 +87,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="legacy-section" id="legacy">
+        <div className="legacy-topline"><SectionLabel>03 / A RECORD OF THE CURVA</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
+        <div className="legacy-title"><p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p></div>
+        <div className="legacy-grid">
+          <article className="legacy-card legacy-card-africa">
+            <span className="legacy-number">01</span>
+            <p className="legacy-kicker">ACROSS THE CONTINENT</p>
+            <h3>THE LONGEST<br /><em>ULTRAS BÂCHE</em><br />IN AFRICA.</h3>
+            <span className="legacy-caption">A STATEMENT OF THE CURVA · UCB06</span>
+          </article>
+          <article className="legacy-card legacy-card-morocco">
+            <span className="legacy-number">02</span>
+            <p className="legacy-kicker">ON THE ROAD</p>
+            <h3>MOROCCO'S OLDEST<br /><em>AWAY-TRAVEL</em><br />BÂCHE.</h3>
+            <span className="legacy-caption">THE ROAD IS PART OF OUR STORY</span>
+          </article>
+        </div>
+        <p className="legacy-footnote">TWO BANNERS. ONE HISTORY. ALWAYS UCB06.</p>
+      </section>
+
       <section className="media-section" id="media">
         <div className="media-heading"><SectionLabel>03 / THE ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>Historical photographs and material from the group's public archive.</p></div></div>
         <div className="media-grid">
@@ -102,13 +123,13 @@ export default function Home() {
 
       <section className="youtube-section" id="videos">
         <div className="youtube-heading">
-          <SectionLabel>04 / THE ULTRAS CHANNEL</SectionLabel>
+          <SectionLabel>05 / THE ULTRAS CHANNEL</SectionLabel>
           <div>
             <h2>THE LATEST<br /><span>FROM UCB06.</span></h2>
             <p>The latest videos from the official Ultras Crazy Boys 2006 channel.</p>
           </div>
         </div>
-        <a className="youtube-frame" href="https://www.youtube.com/@theucb06/videos" target="_blank" rel="noreferrer" aria-label="Open the latest KACM videos on YouTube">
+        <a className="youtube-frame" href="https://www.youtube.com/@theucb06/videos" target="_blank" rel="noreferrer" aria-label="Open the latest UCB06 videos on YouTube">
           <iframe
             src="https://www.youtube.com/embed/videoseries?list=UUFYI5fxpWCf8c5MYIgeSuFw"
             title="Latest uploads from Ultras Crazy Boys 2006"
@@ -119,12 +140,12 @@ export default function Home() {
           />
           <span className="youtube-overlay"><Youtube size={34} /><b>WATCH ON YOUTUBE</b><ArrowUpRight size={20} /></span>
         </a>
-        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW UCB06 CHANNEL <ArrowUpRight size={15} /></a></div>
+        <div className="youtube-bottom"><span>KAWKAB ATHLETIC CLUB DE MARRAKECH</span><a href="https://www.youtube.com/@Kawkab_marrakech-47/videos" target="_blank" rel="noreferrer">VIEW OFFICIAL CHANNEL <ArrowUpRight size={15} /></a></div>
       </section>
 
       <section className="spotify-section" id="music">
         <div className="spotify-heading">
-          <SectionLabel>05 / THE SOUND OF THE CURVA</SectionLabel>
+          <SectionLabel>06 / THE SOUND OF THE CURVA</SectionLabel>
           <div>
             <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
             <p>Listen to the music and releases connected to Crazyboys 2006.</p>

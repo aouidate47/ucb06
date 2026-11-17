@@ -8,13 +8,22 @@ const archiveImages = [
   { title: "THE SCARF", category: "GROUP MATERIAL / 2012", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/378277_273217379421179_102388293170756_585530_881783711_n.jpg" },
 ];
 
+const storyImages = [
+  { image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/kacm1.jpg", alt: "UCB06 supporters and red flares at the stadium" },
+  { image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/420809_254514171291500_102388293170756_541027_1778229756_n.jpg", alt: "A night of red flares in the Curva Sud" },
+  { image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/901513856qi3.jpg", alt: "A full stand covered by a UCB06 choreography" },
+  { image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/378277_273217379421179_102388293170756_585530_881783711_n.jpg", alt: "Historic UCB06 scarf and group identity" },
+  { image: "/images/cover5.jpeg", alt: "Historic UCB06 supporters archive photograph" },
+  { image: "/images/cover6.jpg", alt: "UCB06 supporters in the Curva Sud" },
+];
+
 const covers = [
-  { image: "/images/cover1.jpg", alt: "Crazy Boys 2006 ultras with red flares behind the Crazy Boys banner" },
-  { image: "/images/cover2.jpg", alt: "UCB06 ultras in the curva beneath the group's banner" },
+  { image: "/images/cover1.jpg", alt: "Crazy Boys 2006 ultras banner with red flares" },
+  { image: "/images/cover2.jpg", alt: "UCB06 banner displayed in the Curva" },
   { image: "/images/cover3.jpg", alt: "Ultras Crazy Boys 2006 banner across the El Harti stand" },
   { image: "/images/cover4.png", alt: "Born to Win banner held by UCB06 members at sunset" },
-  { image: "/images/cover5.jpeg", alt: "Historic UCB06 archive photograph from the curva" },
-  { image: "/images/cover6.jpg", alt: "UCB06 archive photograph of the Curva Sud" },
+  { image: "/images/cover5.jpeg", alt: "Historic UCB06 banner archive photograph" },
+  { image: "/images/cover6.jpg", alt: "UCB06 banner and Curva Sud archive photograph" },
 ];
 
 const milestones = [
@@ -74,7 +83,7 @@ export default function Home() {
         <img className="story-tagline" src="/images/story-begins-marrakech.svg" alt="25 December 2006. A story begins in Marrakech." />
         <div className="manifesto-grid">
           <div className="cover-stack cover-stack-left">
-            {covers.slice(0, 3).map((item, index) => (
+            {storyImages.slice(0, 3).map((item, index) => (
               <div className="cover-slot" key={item.image}>
                 <img src={item.image} alt={item.alt} loading="lazy" />
               </div>
@@ -118,7 +127,7 @@ export default function Home() {
 </div>
 
           <div className="cover-stack cover-stack-right">
-            {covers.slice(3).map((item, index) => (
+            {storyImages.slice(3).map((item, index) => (
               <div className="cover-slot" key={item.image}>
                 <img src={item.image} alt={item.alt} loading="lazy" />
               </div>
@@ -215,10 +224,7 @@ export default function Home() {
           <h2>MORE THAN<br /><span>FABRIC.</span></h2>
           <p className="banner-story-lead">A banner carries a name, a city and the presence of generations. It belongs to the people who raise it, protect it and take it wherever the road leads.</p>
         </div>
-        <figure className="banner-feature-photo">
-          <img src="/images/cover3.jpg" alt="Ultras Crazy Boys banner displayed across the Curva Sud" loading="lazy" />
-          <figcaption><span>ULTRAS CRAZY BOYS 2006</span><span>MARRAKECH · THE CURVA SUD</span></figcaption>
-        </figure>
+        <div className="banner-story-typography"><span>ONE NAME · ONE CITY · ONE CURVA</span><strong>UCB<br/>06</strong><span>RAISED BY THE PEOPLE. CARRIED BY GENERATIONS.</span></div>
         <div className="banner-story-facts">
           <div><span>MADE BY THE CURVA</span><h3>MORE THAN<br />A NAME.</h3><p>Every letter represents the people who stand behind it, protect it and carry it through every generation.</p></div>
           <div><span>HOME AND AWAY</span><h3>WHEREVER<br />WE GO.</h3><p>The banner travels with the group — from the Curva Sud to every road that leads to Kawkab.</p></div>

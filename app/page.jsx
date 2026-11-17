@@ -151,20 +151,36 @@ export default function Home() {
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>
       <section className="legacy-section" id="legacy">
-        <div className="legacy-topline"><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
-        <div className="legacy-title"><p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p></div>
-        <div className="legacy-grid">
-          <article className="legacy-card legacy-card-africa">
-            <span className="legacy-number">01</span>
-            <p className="legacy-kicker">ACROSS THE CONTINENT</p>
+        <div className="legacy-topline">
+          <span>CRAZY BOYS 2006 · MARRAKECH</span>
+          <span>EST. 25 DECEMBER 2006</span>
+        </div>
+        <div className="legacy-title">
+          <p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p>
+          <p className="legacy-subtitle">A mark of identity. A symbol carried across generations, stands and roads.</p>
+        </div>
+        <figure className="legacy-artifact">
+          <div className="legacy-artifact-image">
+            <img src="/images/cover3.jpg" alt="Historic UCB06 banner displayed across the El Harti stand" loading="lazy" />
+            <span className="legacy-image-stamp">UCB06 / ARCHIVE</span>
+          </div>
+          <figcaption>
+            <span>THE BÂCHE</span>
+            <span>NOT JUST FABRIC. A PROMISE TO THE CURVA.</span>
+          </figcaption>
+        </figure>
+        <div className="legacy-facts">
+          <article className="legacy-fact">
+            <span className="legacy-number">01 / AFRICA</span>
+            <p className="legacy-kicker">A RECORD OF SCALE</p>
             <h3>THE LONGEST<br /><em>ULTRAS BÂCHE</em><br />IN AFRICA.</h3>
-            <span className="legacy-caption">A STATEMENT OF THE CURVA · UCB06</span>
+            <p className="legacy-fact-copy">A banner measured in more than metres — a statement of belonging, built by the curva.</p>
           </article>
-          <article className="legacy-card legacy-card-morocco">
-            <span className="legacy-number">02</span>
-            <p className="legacy-kicker">ON THE ROAD</p>
-            <h3>MOROCCO'S OLDEST<br /><em>AWAY-TRAVEL</em><br />BÂCHE.</h3>
-            <span className="legacy-caption">THE ROAD IS PART OF OUR STORY</span>
+          <article className="legacy-fact">
+            <span className="legacy-number">02 / MOROCCO</span>
+            <p className="legacy-kicker">A HISTORY ON THE ROAD</p>
+            <h3>THE OLDEST<br /><em>AWAY-TRAVEL BÂCHE</em><br />IN MOROCCO.</h3>
+            <p className="legacy-fact-copy">Every journey carries the same colours. Every kilometre becomes part of the archive.</p>
           </article>
         </div>
         <p className="legacy-footnote">TWO BANNERS. ONE HISTORY. ALWAYS UCB06.</p>

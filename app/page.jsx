@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Youtube, Music2, Menu } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Youtube, Instagram, Facebook, Music2, Menu } from "lucide-react";
 
 const archiveImages = [
   { title: "CURVA MITICA", category: "THE STAND / ARCHIVE", image: "https://ucb2006.wordpress.com/wp-content/uploads/2012/03/kacm1.jpg" },
@@ -111,9 +111,10 @@ export default function Home() {
           <a className="brand footer-brand" href="#"><img className="brand-logo" src="https://ucb2006.wordpress.com/wp-content/uploads/2012/03/cropped-180017_112936392115946_102388293170756_94706_1772312_n12.jpg" alt="Crazyboys 2006 emblem" /><span className="brand-name">CRAZYBOYS<span>2006</span></span></a>
           <p>ONE CITY. ONE CLUB. SINCE 2006.</p>
           <div className="socials">
-            <a href="https://www.youtube.com/channel/UCIg_0PYU1QwSZ_tXrC_OjQA/featured" target="_blank" rel="noreferrer" aria-label="YouTube archive"><Youtube size={18} /></a>
-            <a href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer" aria-label="Crazy Boys 2006 on Spotify"><Music2 size={18} /></a>
-            <a href="https://ucb2006.wordpress.com/" target="_blank" rel="noreferrer" aria-label="Historical website"><ArrowUpRight size={18} /></a>
+            <a href="https://youtube.com/@theucb06" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on YouTube"><Youtube size={18} /></a>
+            <a href="https://www.instagram.com/ucb06_" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Instagram"><Instagram size={18} /></a>
+            <a href="https://www.facebook.com/share/1CjqFyPmrd/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Facebook"><Facebook size={18} /></a>
+            <a href="https://open.spotify.com/artist/1sDw2xw1gleNlPECJOS8dQ" target="_blank" rel="noreferrer" aria-label="Crazyboys 2006 on Spotify"><Music2 size={18} /></a>
           </div>
           <span className="copyright">© UCB06 — ALL RIGHTS RESERVED</span>
         </div>

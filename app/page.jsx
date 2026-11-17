@@ -106,7 +106,7 @@ export default function Home() {
       </section>
 
       <section className="culture" id="culture">
-        <div className="culture-heading"><SectionLabel>02 / THE TIMELINE</SectionLabel><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
+        <div className="culture-heading"><p>FROM THE CITY.<br /><span>FOR THE CLUB.</span></p></div>
         <div className="story-list">
           {milestones.map((item, index) => (
             <article className="story-row" key={item.year}>
@@ -122,7 +122,7 @@ export default function Home() {
 
       <section className="rituals-section" id="rituals">
         <div className="rituals-head">
-          <SectionLabel>03 / MATCHDAY CULTURE</SectionLabel>
+          
           <div className="rituals-title">
             <p className="rituals-overline">NOT JUST 90 MINUTES.</p>
             <h2>THIS IS HOW<br /><span>WE LIVE IT.</span></h2>
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="rituals-footer"><span>HOME OR AWAY</span><span>ONE COLOUR. ONE CITY. ONE CURVA.</span><span>UCB06 / MARRAKECH</span></div>
       </section>
       <section className="legacy-section" id="legacy">
-        <div className="legacy-topline"><SectionLabel>04 / OUR LEGACY</SectionLabel><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
+        <div className="legacy-topline"><span>CRAZY BOYS 2006 · MARRAKECH</span></div>
         <div className="legacy-title"><p>MORE THAN A BANNER.<br /><span>A PIECE OF HISTORY.</span></p></div>
         <div className="legacy-grid">
           <article className="legacy-card legacy-card-africa">
@@ -181,7 +181,7 @@ export default function Home() {
       </section>
 
       <section className="media-section" id="media">
-        <div className="media-heading"><SectionLabel>05 / THE PHOTO ARCHIVE</SectionLabel><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
+        <div className="media-heading"><div><h2>MEMORIES<br /><span>FROM THE CURVA.</span></h2><p>A visual record of the stands, the journeys and the generations that built UCB06.</p></div></div>
         <div className="media-grid">
           {archiveImages.map((item, index) => (
             <a className={`media-card media-card-${index + 1}`} href={item.image} target="_blank" rel="noreferrer" aria-label={"Open original photograph: " + item.title} key={item.title}>
@@ -196,7 +196,7 @@ export default function Home() {
 
       <section className="youtube-section" id="videos">
         <div className="youtube-heading">
-          <SectionLabel>06 / THE ULTRAS CHANNEL</SectionLabel>
+          
           <div>
             <h2>THE LATEST<br /><span>FROM UCB06.</span></h2>
             <p>Matchday footage, away days and the sound of the stands. Straight from the UCB06 channel.</p>
@@ -218,7 +218,7 @@ export default function Home() {
 
       <section className="spotify-section" id="music">
         <div className="spotify-heading">
-          <SectionLabel>07 / THE SOUND OF THE CURVA</SectionLabel>
+          
           <div>
             <h2>THE SOUND<br /><span>OF UCB06.</span></h2>
             <p>The soundtrack of the curva. Discover the music connected to Crazy Boys 2006.</p>
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       <footer id="contact">
-        <div className="footer-top"><div><span className="footer-kicker">THE CURVA IS OUR HOME</span><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
+        <div className="footer-top"><div><h2>ALWAYS<br /><span>UCB06.</span></h2></div><a className="back-top" href="#">BACK TO TOP <ArrowUpRight size={18} /></a></div>
         <div className="footer-bottom">
           <a className="brand footer-brand" href="#"><img className="brand-logo" src="/images/logo.png" alt="Crazyboys 2006 emblem" /><span className="brand-name">CRAZYBOYS<span>2006</span></span></a>
           

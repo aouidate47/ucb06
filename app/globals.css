@@ -276,7 +276,6 @@ footer{padding:75px 7vw 25px}
 
 @media(prefers-reduced-motion:reduce){.hero-video{display:none}}
 
-*{font-family:'Permanent Marker',cursive!important;font-weight:400!important}
 
 /* UCB06 section refinements — keep the opening two sections intact */
 .culture{background:#171513;padding-top:112px;padding-bottom:120px;isolation:isolate}
@@ -379,3 +378,178 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
 @media(max-width:1000px){.rituals-head{grid-template-columns:1fr 1.4fr}.rituals-intro{grid-column:2;margin:-5px 0 0}.rituals-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ritual-card{min-height:330px}.ritual-card:nth-child(even){transform:none}.ritual-card:nth-child(even):hover{transform:translateY(-7px) rotate(1deg)}}
 @media(max-width:800px){.rituals-section{padding:82px 7vw 34px}.rituals-head{display:block}.rituals-title{padding-top:42px}.rituals-title h2{font-size:clamp(64px,13vw,94px)}.rituals-intro{margin:26px 0 0;max-width:420px;font-size:12px}.rituals-grid{margin-top:44px;gap:12px}.ritual-card{min-height:315px;padding:14px}.ritual-graphic{height:120px;margin:16px -14px}.ritual-card-copy h3{font-size:clamp(23px,5vw,31px)}.ritual-card-copy p{font-size:10px}.rituals-footer{margin-top:44px;flex-wrap:wrap;font-size:8px}.rituals-footer span:nth-child(2){order:3;width:100%}}
 @media(max-width:430px){.rituals-grid{grid-template-columns:1fr}.ritual-card{min-height:285px}.ritual-graphic{height:110px}.ritual-card-copy h3{font-size:31px}.rituals-title h2{font-size:clamp(58px,14vw,76px)}}
+
+
+/* Distinct art direction for the inner sections — preserve hero and manifesto */
+.culture{
+  background:#e8dfcf;color:#171513;padding:132px 10vw 145px;
+  border-top:10px solid #c82027;isolation:isolate
+}
+.culture:before{content:'THE YEARS';left:auto;right:-2vw;bottom:-.1em;font-size:clamp(150px,28vw,390px);color:#17151308}
+.culture:after{color:#1715130a}
+.culture-heading{display:block;margin-bottom:88px}
+.culture-heading .section-label{color:#766f64}
+.culture-heading>p{text-align:left;margin:48px 0 0;font-size:clamp(76px,12vw,164px);line-height:.76;letter-spacing:-.04em}
+.culture-heading>p span{color:#c82027}
+.story-list{max-width:none;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:7vw}
+.story-list:before{display:none}
+.story-row,.story-row:last-child{
+  min-height:210px;grid-template-columns:52px minmax(0,1fr) 90px;gap:18px;
+  border-top:1px solid #17151355;border-bottom:0;padding:28px 0;align-items:start
+}
+.story-row:nth-child(odd){padding-right:20px}
+.story-row:nth-child(even){padding-left:20px}
+.story-number{width:auto;height:auto;display:block;border:0;background:none;color:#c82027;font:italic 20px 'Libre Baskerville',serif;padding-top:5px}
+.story-title h3{font:clamp(30px,3.4vw,48px)/.9 'Anton',Impact,sans-serif;color:#171513}
+.story-title p{font:11px/1.9 'DM Mono',monospace;color:#625b51;max-width:390px}
+.story-type{justify-self:end;color:#c82027;font-size:9px}
+.story-arrow{display:none}
+.story-row:hover{padding-left:0;color:#171513}
+.story-row:hover .story-number{background:none;color:#171513}
+
+.legacy-section{
+  background:#171513;color:#eee6d5;padding:130px 8vw 120px;
+  border-top:0;border-bottom:0
+}
+.legacy-section:before{content:'LEGACY';right:-2vw;top:22px;color:#eee6d508;font-size:clamp(160px,29vw,390px)}
+.legacy-topline>span{color:#c82027}
+.legacy-title{margin:95px 0 70px}
+.legacy-title p{font-size:clamp(66px,10vw,140px);line-height:.78;max-width:1100px}
+.legacy-title p span{color:#c82027;text-shadow:none}
+.legacy-grid{grid-template-columns:1.15fr .85fr;gap:0;border-top:1px solid #eee6d555;border-bottom:1px solid #eee6d555}
+.legacy-card,.legacy-card-morocco{
+  min-height:390px;background:transparent;color:#eee6d5;border:0;box-shadow:none;
+  padding:38px 38px 34px;transform:none;transition:background .3s
+}
+.legacy-card:first-child{border-right:1px solid #eee6d555}
+.legacy-card:after{font-size:clamp(100px,17vw,230px);color:#eee6d508}
+.legacy-card:hover,.legacy-card-morocco:hover{transform:none;box-shadow:none;background:#ffffff08}
+.legacy-kicker,.legacy-card-morocco .legacy-kicker{color:#c82027}
+.legacy-card h3{font-size:clamp(46px,6.5vw,88px);line-height:.82}
+.legacy-card h3 em{color:#c82027}
+.legacy-card-morocco h3 em{color:#c82027}
+.legacy-caption{color:#bcb2a3}
+.legacy-footnote{color:#c82027;margin-top:32px}
+
+.media-section{
+  background:#d9cfbd;color:#171513;padding:130px 8vw 140px;
+  border-top:12px solid #c82027
+}
+.media-section:before{opacity:.13;background-image:linear-gradient(#17151312 1px,transparent 1px);background-size:100% 42px}
+.media-section:after{content:'CONTACT SHEET / 2006—NOW';top:50px;right:8vw}
+.media-heading{display:block;margin-bottom:70px}
+.media-heading>div{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-top:55px}
+.media-heading h2{font-size:clamp(74px,11vw,150px);line-height:.76}
+.media-heading p{max-width:260px;line-height:1.9;margin:0 0 5px}
+.media-grid{grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:62px;gap:16px;align-items:stretch}
+.media-card,.media-card-2,.media-card-3{
+  grid-column:span 3;height:auto;min-height:0;margin:0;transform:none;
+  border:0;outline:1px solid #171513;box-shadow:5px 5px 0 #c82027
+}
+.media-card-1{grid-column:span 6;grid-row:span 6}
+.media-card-2{grid-column:span 3;grid-row:span 4;margin-top:38px}
+.media-card-3{grid-column:span 3;grid-row:span 5;margin-top:0}
+.media-card-4{grid-column:span 6;grid-row:span 4;margin-top:-22px}
+.media-card:nth-child(even),.media-card:nth-child(3){margin-top:0}
+.media-card-2{margin-top:38px!important}
+.media-card-4{margin-top:-22px!important}
+.media-card:hover{transform:translateY(-5px);box-shadow:9px 10px 0 #c82027}
+.media-photo{filter:grayscale(1) contrast(1.1)}
+.media-card-info h3{font-size:clamp(24px,3vw,42px)}
+.archive-link-wrap{justify-content:flex-start;margin-top:58px}
+
+.youtube-section{
+  background:#8f171d;padding:118px 8vw 100px;border:0;color:#fff;
+  background-image:linear-gradient(115deg,#8f171d 0%,#c82027 52%,#6f1118 100%)
+}
+.youtube-section:before{content:'LIVE';right:2vw;top:0;color:#ffffff0c;font-size:clamp(220px,40vw,560px)}
+.youtube-section:after{background-image:repeating-linear-gradient(135deg,transparent 0 18px,#ffffff08 18px 19px);opacity:1}
+.youtube-heading{display:block;margin-bottom:55px}
+.youtube-heading .section-label{color:#f2c9c4}
+.youtube-heading>div{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-top:55px}
+.youtube-heading h2{font-size:clamp(76px,11vw,150px);line-height:.76}
+.youtube-heading h2 span{color:#171513;text-shadow:none}
+.youtube-heading p{max-width:270px;color:#f2d7d2;line-height:1.9;margin:0 0 5px}
+.youtube-frame{width:min(100%,1120px);border:10px solid #171513;outline:1px solid #eee6d5;box-shadow:14px 14px 0 #eee6d5;transform:none}
+.youtube-bottom{color:#f2d7d2}
+.youtube-bottom a{color:white;border-color:#171513}
+
+.spotify-section{
+  background:#171513;color:#eee6d5;padding:130px 8vw 135px;
+  border:0;position:relative;isolation:isolate;overflow:hidden
+}
+.spotify-section:before{content:'SING IT';position:absolute;z-index:-1;right:-2vw;top:0;font:clamp(180px,32vw,440px)/.8 'Anton',Impact,sans-serif;color:#eee6d508;white-space:nowrap}
+.spotify-heading{display:block;margin-bottom:58px}
+.spotify-heading .section-label{color:#c8bdad}
+.spotify-heading>div{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-top:55px}
+.spotify-heading h2{font-size:clamp(76px,11vw,150px);line-height:.76}
+.spotify-heading h2 span{color:#c82027}
+.spotify-heading p{max-width:270px;color:#bcb2a3;line-height:1.9;margin:0 0 5px}
+.spotify-card{width:100%;max-width:1120px;background:#c82027;padding:22px;border:1px solid #eee6d5;box-shadow:12px 12px 0 #eee6d5}
+.spotify-card iframe{height:380px;border-radius:0}
+.spotify-card-top{padding-bottom:20px}
+.spotify-open{padding-top:4px}
+
+.quote-section{
+  min-height:620px;padding:115px 8vw 48px;background:#d9cfbd;color:#171513;
+  border-left:18px solid #c82027;display:flex;flex-direction:column;justify-content:space-between
+}
+.quote-section:before{content:'MARRAKECH';left:auto;right:-2vw;top:auto;bottom:70px;color:#17151308;font-size:clamp(160px,28vw,380px)}
+.quote-section:after{content:'UCB06 / 2006';top:55px;right:8vw;color:#171513;font:10px 'DM Mono',monospace;letter-spacing:2px}
+.quote-mark{font-size:150px;color:#c82027;line-height:.5}
+.quote-section>p{font-size:clamp(58px,10vw,138px);line-height:.8;color:#171513;text-shadow:none;margin:40px 0 80px;max-width:1100px}
+.quote-section>p span{color:#c82027}
+.quote-bottom{border-top:1px solid #17151366;color:#625b51;padding-top:18px}
+
+@media(max-width:1000px){
+  .story-list{grid-template-columns:1fr;column-gap:0}
+  .story-row,.story-row:last-child{min-height:0;padding:24px 0;grid-template-columns:42px minmax(0,1fr) 75px}
+  .story-row:nth-child(odd),.story-row:nth-child(even){padding-left:0;padding-right:0}
+  .legacy-grid{grid-template-columns:1fr}
+  .legacy-card:first-child{border-right:0;border-bottom:1px solid #eee6d555}
+  .media-grid{grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:52px}
+  .media-card-1{grid-column:span 6;grid-row:span 5}
+  .media-card-2,.media-card-3{grid-column:span 3;grid-row:span 4;margin:0!important}
+  .media-card-4{grid-column:span 6;grid-row:span 4;margin:0!important}
+}
+@media(max-width:800px){
+  .culture{padding:88px 7vw 96px}
+  .culture-heading{margin-bottom:55px}
+  .culture-heading>p{font-size:clamp(65px,14vw,100px);margin-top:38px}
+  .story-row,.story-row:last-child{grid-template-columns:34px minmax(0,1fr) 62px;gap:12px}
+  .story-title h3{font-size:clamp(28px,7vw,38px)}
+  .story-title p{font-size:10px}
+  .legacy-section{padding:90px 7vw}
+  .legacy-title{margin:60px 0 45px}
+  .legacy-card,.legacy-card-morocco{min-height:310px;padding:28px 10px}
+  .legacy-card h3{font-size:clamp(46px,11vw,72px)}
+  .legacy-caption{font-size:8px}
+  .media-section{padding:90px 7vw 100px}
+  .media-heading>div,.youtube-heading>div,.spotify-heading>div{display:block;margin-top:40px}
+  .media-heading h2,.youtube-heading h2,.spotify-heading h2{font-size:clamp(68px,14vw,100px)}
+  .media-heading p,.youtube-heading p,.spotify-heading p{margin-top:22px;max-width:400px}
+  .media-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:45px;gap:13px}
+  .media-card-1{grid-column:span 2;grid-row:span 5}
+  .media-card-2,.media-card-3{grid-column:span 1;grid-row:span 4}
+  .media-card-4{grid-column:span 2;grid-row:span 4}
+  .youtube-section,.spotify-section{padding:90px 7vw}
+  .youtube-frame{border-width:6px;box-shadow:7px 7px 0 #171513}
+  .spotify-card{padding:13px;box-shadow:7px 7px 0 #eee6d5}
+  .spotify-card iframe{height:352px}
+  .quote-section{min-height:520px;padding:95px 7vw 35px;border-left-width:9px}
+  .quote-section>p{font-size:clamp(48px,11vw,76px);margin:45px 0 80px}
+}
+@media(max-width:430px){
+  .culture-heading>p{font-size:clamp(56px,14vw,72px)}
+  .story-row,.story-row:last-child{grid-template-columns:28px minmax(0,1fr);gap:10px}
+  .story-type{display:none}
+  .legacy-card,.legacy-card-morocco{min-height:285px}
+  .legacy-card h3{font-size:clamp(40px,11vw,54px)}
+  .media-grid{grid-template-columns:1fr;grid-auto-rows:42px}
+  .media-card-1,.media-card-2,.media-card-3,.media-card-4{grid-column:span 1;grid-row:span 5;margin:0!important}
+  .media-card-2,.media-card-4{width:90%;justify-self:end}
+  .youtube-frame{aspect-ratio:16/10}
+  .spotify-card iframe{height:352px}
+  .quote-section{min-height:470px}
+  .quote-section>p{font-size:clamp(42px,11vw,52px)}
+}

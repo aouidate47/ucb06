@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>html,body{margin:0;font:12px monospace}iframe{border:0;display:block}</style></head>
+<body>
+<iframe id="f" src="/"></iframe>
+<pre id="r">measuring...</pre>
+<script>
+const w = Number(new URLSearchParams(location.search).get("w") || 390);
+const f = document.getElementById("f");
+f.style.width = w + "px";
+f.style.height = "900px";
+f.onload = () => {
+  setTimeout(() => {
+    const d = f.contentDocument;
+    const vw = f.contentWindow.innerWidth;
+    const over = [];
+    d.querySelectorAll("body *").forEach((el) => {
+      if (!el.textContent.trim()) return;
+      const cs = f.contentWindow.getComputedStyle(el);
+      if (cs.display === "none" || cs.visibility === "hidden") return;
+      const r = el.getBoundingClientRect();
+      const sw = el.scrollWidth;
+      if (r.right > vw + 1 || r.left < -1 || sw > el.clientWidth + 1) {
+        const txt = el.childElementCount ? "" : el.textContent.trim().replace(/\s+/g, " ").slice(0, 60);
+        if (sw > el.clientWidth + 1 || r.right > vw + 1) {
+          over.push({
+            tag: el.tagName.toLowerCase(),
+            cls: el.className && typeof el.className === "string" ? el.className : "",
+            text: txt,
+            left: Math.round(r.left),
+            right: Math.round(r.right),
+            width: Math.round(r.width),
+            clientWidth: el.clientWidth,
+            scrollWidth: sw,
+            font: cs.fontFamily,
+            size: cs.fontSize,
+          });
+        }
+      }
+    });
+    document.getElementById("r").textContent = JSON.stringify({
+      iframeWidth: vw,
+      docScrollWidth: d.documentElement.scrollWidth,
+      bodyScrollWidth: d.body.scrollWidth,
+      overRows: over.length,
+      over,
+    }, null, 2);
+  }, 1200);
+};
+</script>
+</body>
+</html>

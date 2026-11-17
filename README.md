@@ -18,3 +18,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Notes
 The current homepage is an initial visual direction. Replace placeholder photography, social links, copy and archive entries with approved Crazyboys 2006 material before launch.
+
+## Repo 
+https://github.com/aouidate47/ucb06.git
+

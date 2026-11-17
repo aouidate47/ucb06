@@ -340,3 +340,42 @@ footer:before{content:'CRAZY BOYS';position:absolute;z-index:-1;right:-3vw;top:6
 @media(max-width:1000px){.media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.media-card,.media-card-2,.media-card-3{height:330px}.media-card:nth-child(even),.media-card:nth-child(3){margin-top:0}.media-card:nth-child(2),.media-card:nth-child(4){margin-top:38px}}
 @media(max-width:800px){.culture{padding:82px 7vw 90px}.culture-heading{display:block;margin-bottom:46px}.culture-heading>p{text-align:left;margin-top:42px;font-size:clamp(54px,12vw,78px)}.story-list{margin:0}.story-list:before{left:19px}.story-row{grid-template-columns:40px minmax(0,1fr) 28px;gap:13px;padding:23px 0}.story-number{width:38px;height:38px;font-size:9px}.story-title h3{font-size:clamp(25px,6vw,34px)}.story-title p{font-size:10px;line-height:1.8}.story-type,.story-year{display:none}.story-arrow{width:28px;height:28px}.legacy-section{padding:82px 7vw 85px}.legacy-title{margin:52px 0 38px}.legacy-grid{gap:20px}.legacy-card{min-height:330px;padding:28px 25px}.legacy-card-morocco,.legacy-card-morocco:hover{transform:none}.legacy-card h3{font-size:clamp(42px,10vw,65px)}.legacy-caption{font-size:8px}.legacy-footnote{margin-top:48px;font-size:8px}.media-section{padding:82px 7vw 90px}.media-heading{display:block;margin-bottom:45px}.media-heading>div{margin-top:42px}.media-heading h2{font-size:clamp(68px,14vw,100px)}.media-grid{grid-template-columns:1fr 1fr;gap:15px}.media-card,.media-card-2,.media-card-3{height:290px;margin:0}.media-card:nth-child(2),.media-card:nth-child(4){margin-top:30px}.media-card-info h3{font-size:clamp(22px,5vw,30px)}.quote-section{padding:100px 7vw 38px}.quote-section>p{font-size:clamp(46px,10vw,75px);margin:35px 0 90px}footer{padding:82px 7vw 28px}.footer-top{padding-bottom:75px}.footer-top h2{font-size:clamp(92px,18vw,140px)}}
 @media(max-width:430px){.legacy-card{min-height:290px}.legacy-card h3{font-size:clamp(39px,11vw,52px)}.media-grid{grid-template-columns:1fr}.media-card,.media-card-2,.media-card-3,.media-card:nth-child(2),.media-card:nth-child(4){height:285px;width:100%;margin:0;transform:none}.media-card:nth-child(even){width:90%;justify-self:end}.quote-section>p{font-size:clamp(39px,10vw,48px)}.quote-bottom{font-size:7px;letter-spacing:.8px}.footer-top h2{font-size:clamp(78px,18vw,108px)}.footer-bottom{gap:18px}.socials{order:3;width:100%}.copyright{order:4;width:100%}}
+
+/* Matchday culture — a new editorial feature, not a generic card grid */
+.rituals-section{position:relative;overflow:hidden;background:#c82027;color:#171513;padding:112px 8vw 48px;isolation:isolate}
+.rituals-section:before{content:'CURVA';position:absolute;z-index:-1;left:-3vw;top:24%;font:clamp(180px,34vw,470px)/.8 'Anton',Impact,sans-serif;color:#fff1;letter-spacing:-.04em;pointer-events:none}
+.rituals-head{display:grid;grid-template-columns:1fr 1.35fr .8fr;gap:30px;align-items:start;position:relative}
+.rituals-head>.section-label{color:#260d0e}
+.rituals-title{padding-top:54px}
+.rituals-overline{font:10px 'DM Mono',monospace;letter-spacing:2px;margin:0 0 18px}
+.rituals-title h2{font:clamp(66px,8.5vw,118px)/.82 'Anton',Impact,sans-serif;letter-spacing:-.03em;margin:0}
+.rituals-title h2 span{color:var(--paper);text-shadow:3px 3px 0 #171513}
+.rituals-intro{max-width:260px;font:italic 13px/1.9 'Libre Baskerville',serif;margin:60px 0 0}
+.rituals-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:80px}
+.ritual-card{min-height:360px;background:var(--paper);border:1px solid var(--ink);padding:18px 18px 22px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.ritual-card:nth-child(even){transform:translateY(32px)}
+.ritual-card:hover{transform:translateY(-7px) rotate(-1deg);box-shadow:8px 8px 0 var(--ink)}
+.ritual-card:nth-child(even):hover{transform:translateY(25px) rotate(1deg)}
+.ritual-card-top{display:flex;justify-content:space-between;gap:8px;align-items:center;font:9px 'DM Mono',monospace;letter-spacing:1px;position:relative;z-index:1}
+.ritual-card-top span:first-child{color:var(--red);font-size:12px}
+.ritual-card-top span:last-child{text-align:right;color:#776e61;font-size:8px}
+.ritual-graphic{height:145px;margin:18px -18px 18px;display:grid;place-items:center;position:relative;overflow:hidden;background:#171513}
+.ritual-graphic:before,.ritual-graphic:after{content:'';position:absolute;border:1px solid #eee6d52c;border-radius:50%;width:112px;height:112px}
+.ritual-graphic:after{width:82px;height:82px;border-color:#c8202766}
+.ritual-graphic span{font:76px/.8 'Anton',Impact,sans-serif;color:var(--paper);position:relative;z-index:1}
+.ritual-card-2 .ritual-graphic{background:repeating-linear-gradient(135deg,#171513 0 12px,#c82027 12px 22px)}
+.ritual-card-2 .ritual-graphic:before,.ritual-card-2 .ritual-graphic:after{display:none}
+.ritual-card-3 .ritual-graphic{background:var(--red)}
+.ritual-card-3 .ritual-graphic:before{width:180px;height:90px;border-radius:0;transform:rotate(-20deg);border:8px solid #171513}
+.ritual-card-3 .ritual-graphic:after{width:140px;height:55px;border-radius:0;transform:rotate(-20deg);border:2px dashed var(--paper)}
+.ritual-card-4 .ritual-graphic{background:#8f171d}
+.ritual-card-copy{margin-top:auto;position:relative;z-index:1}
+.ritual-card-copy h3{font:clamp(24px,2.5vw,34px)/.95 'Anton',Impact,sans-serif;margin:0 0 12px}
+.ritual-card-copy p{font:11px/1.8 'Libre Baskerville',serif;color:#625b51;margin:0}
+.ritual-card-line{height:4px;width:36px;background:var(--red);margin-top:18px}
+.rituals-footer{display:flex;justify-content:space-between;gap:18px;margin-top:90px;padding-top:18px;border-top:1px solid #17151366;font:9px 'DM Mono',monospace;letter-spacing:1.2px}
+.media-card{cursor:zoom-in}
+.media-card:hover .media-photo{filter:grayscale(0) contrast(1.08)}
+@media(max-width:1000px){.rituals-head{grid-template-columns:1fr 1.4fr}.rituals-intro{grid-column:2;margin:-5px 0 0}.rituals-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ritual-card{min-height:330px}.ritual-card:nth-child(even){transform:none}.ritual-card:nth-child(even):hover{transform:translateY(-7px) rotate(1deg)}}
+@media(max-width:800px){.rituals-section{padding:82px 7vw 34px}.rituals-head{display:block}.rituals-title{padding-top:42px}.rituals-title h2{font-size:clamp(64px,13vw,94px)}.rituals-intro{margin:26px 0 0;max-width:420px;font-size:12px}.rituals-grid{margin-top:44px;gap:12px}.ritual-card{min-height:315px;padding:14px}.ritual-graphic{height:120px;margin:16px -14px}.ritual-card-copy h3{font-size:clamp(23px,5vw,31px)}.ritual-card-copy p{font-size:10px}.rituals-footer{margin-top:44px;flex-wrap:wrap;font-size:8px}.rituals-footer span:nth-child(2){order:3;width:100%}}
+@media(max-width:430px){.rituals-grid{grid-template-columns:1fr}.ritual-card{min-height:285px}.ritual-graphic{height:110px}.ritual-card-copy h3{font-size:31px}.rituals-title h2{font-size:clamp(58px,14vw,76px)}}
